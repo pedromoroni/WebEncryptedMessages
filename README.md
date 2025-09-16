@@ -1,3 +1,3 @@
 # WebEncryptedMessages
 
-- project not finished yet
+- project not finished
