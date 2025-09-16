@@ -1,0 +1,17 @@
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Data\obj\Debug\net9.0\WebMessages.Data.csproj.AssemblyReference.cache
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Data\obj\Debug\net9.0\WebMessages.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Data\obj\Debug\net9.0\WebMessages.Data.AssemblyInfoInputs.cache
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Data\obj\Debug\net9.0\WebMessages.Data.AssemblyInfo.cs
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Data\obj\Debug\net9.0\WebMessages.Data.csproj.CoreCompileInputs.cache
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Data\bin\Debug\net9.0\WebMessages.Data.deps.json
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Data\bin\Debug\net9.0\WebMessages.Data.runtimeconfig.json
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Data\bin\Debug\net9.0\WebMessages.Data.dll
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Data\bin\Debug\net9.0\WebMessages.Data.pdb
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Data\bin\Debug\net9.0\WebMessages.Models.dll
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Data\bin\Debug\net9.0\WebMessages.Models.pdb
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Data\obj\Debug\net9.0\WebMessa.B845B8E2.Up2Date
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Data\obj\Debug\net9.0\WebMessages.Data.dll
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Data\obj\Debug\net9.0\refint\WebMessages.Data.dll
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Data\obj\Debug\net9.0\WebMessages.Data.pdb
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Data\obj\Debug\net9.0\WebMessages.Data.genruntimeconfig.cache
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Data\obj\Debug\net9.0\ref\WebMessages.Data.dll

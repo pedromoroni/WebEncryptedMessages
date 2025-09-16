@@ -1,0 +1,6 @@
+@WebMessages_HostAddress = http://localhost:5034
+
+GET {{WebMessages_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

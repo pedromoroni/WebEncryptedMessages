@@ -1,0 +1,57 @@
+﻿@page "/home"
+@attribute [StreamRendering]
+@rendermode InteractiveServer
+@inject NavigationManager NavigationManager
+@inject HttpClient Http
+
+@using Microsoft.AspNetCore.SignalR.Client
+@using Microsoft.AspNetCore.Http.Connections
+
+<h3>Status do Pedido</h3>
+
+<p><strong>@message</strong></p>
+
+<button @onclick=@SendHello>Enviar Hello World (orderId = 5)</button>
+
+@code {
+    private HubConnection? _hubConnection;
+    private string message = "Aguardando notificações...";
+
+    protected override async Task OnInitializedAsync()
+    {
+        var hubUrl = "https://localhost:7051/orderHub"; 
+
+        _hubConnection = new HubConnectionBuilder()
+            .WithUrl(hubUrl, options =>
+            {
+                options.Transports = HttpTransportType.WebSockets; // agora reconhece
+            })
+            .WithAutomaticReconnect()
+            .Build();
+
+        _hubConnection.On<object>("OrderStatusUpdated", (order) =>
+        {
+            message = System.Text.Json.JsonSerializer.Serialize(order);
+            InvokeAsync(StateHasChanged);
+        });
+
+        await _hubConnection.StartAsync();
+        await _hubConnection.InvokeAsync("SubscribeToOrder", "5");
+    }
+
+    private async Task SendHello()
+    {
+        // Chama a API que dispara a mensagem
+        var response = await Http.PostAsync("Users/notify/5", null);
+
+        Console.WriteLine(response);
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        if (_hubConnection is not null)
+        {
+            await _hubConnection.DisposeAsync();
+        }
+    }
+}

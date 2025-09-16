@@ -1,0 +1,14 @@
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Models\obj\Debug\net9.0\WebMessages.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Models\obj\Debug\net9.0\WebMessages.Models.AssemblyInfoInputs.cache
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Models\obj\Debug\net9.0\WebMessages.Models.AssemblyInfo.cs
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Models\obj\Debug\net9.0\WebMessages.Models.csproj.CoreCompileInputs.cache
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Models\bin\Debug\net9.0\WebMessages.Models.deps.json
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Models\bin\Debug\net9.0\WebMessages.Models.dll
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Models\bin\Debug\net9.0\WebMessages.Models.pdb
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Models\obj\Debug\net9.0\WebMessages.Models.dll
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Models\obj\Debug\net9.0\refint\WebMessages.Models.dll
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Models\obj\Debug\net9.0\WebMessages.Models.pdb
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Models\obj\Debug\net9.0\ref\WebMessages.Models.dll
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Models\bin\Debug\net9.0\WebMessages.Models.runtimeconfig.json
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Models\obj\Debug\net9.0\WebMessages.Models.csproj.AssemblyReference.cache
+C:\Users\pedro\Documents\WebMessages\WebMessages\src\WebMessages.Models\obj\Debug\net9.0\WebMessages.Models.genruntimeconfig.cache
