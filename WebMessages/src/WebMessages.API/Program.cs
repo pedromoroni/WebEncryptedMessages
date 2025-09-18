@@ -45,6 +45,9 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IMessageRepository, MessageRepository>();
 builder.Services.AddScoped<IMessageService, MessageService>();
 
+builder.Services.AddScoped<IDeviceRepository, DeviceRepository>();
+builder.Services.AddScoped<IDeviceService, DeviceService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

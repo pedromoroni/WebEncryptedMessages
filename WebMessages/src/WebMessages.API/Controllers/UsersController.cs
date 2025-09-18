@@ -11,6 +11,7 @@ using WebMessages.Models.DTOs;
 using WebMessages.Models.DTOs.UserDevice;
 using WebMessages.Models.DTOs.Users;
 using WebMessages.Models.Entities;
+using WebMessages.Services.Implementations;
 using WebMessages.Services.Interfaces;
 
 namespace WebMessages.API.Controllers;
@@ -20,13 +21,15 @@ namespace WebMessages.API.Controllers;
 public class UsersController : ControllerBase
 {
     private readonly IUserService _userService;
+    private readonly IDeviceService _deviceService;
 
     private readonly IHubContext<OrderHub> _hubContext;
 
 
-    public UsersController(IUserService userService, IHubContext<OrderHub> hubContext) 
+    public UsersController(IUserService userService, IDeviceService deviceService, IHubContext<OrderHub> hubContext) 
     {
         _userService = userService;
+        _deviceService = deviceService;
         _hubContext = hubContext;
     }
 
@@ -38,12 +41,14 @@ public class UsersController : ControllerBase
     {
         try
         {
+            await _deviceService.RegisterDeviceAsync(userCredentials);
+
             var response = await _userService.GetUserAsync(userCredentials.User);
             return Ok(response);
         }
-        catch (Exception)
+        catch (Exception ex)
         {
-            return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred while retrieving user.");
+            return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
         }
     }
 
