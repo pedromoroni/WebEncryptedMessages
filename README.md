@@ -1,8 +1,8 @@
 # WebEncryptedMessages
 
-- Projeto Em Desenvimento
+_Projeto Em Desenvimento_
 
-- Objetivos:
+Objetivos:
 - Páginas de Login e Registro
 - Sistema de mensagens entre utilizadores
 - Encriptação em Ponta a Ponta, tornando impossível alguém fora das conversas ler as mensangens encriptadas
