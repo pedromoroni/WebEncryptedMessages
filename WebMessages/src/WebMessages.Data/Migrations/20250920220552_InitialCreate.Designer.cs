@@ -12,7 +12,7 @@ using WebMessages.Data;
 namespace WebMessages.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250916201247_InitialCreate")]
+    [Migration("20250920220552_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -74,7 +74,7 @@ namespace WebMessages.Data.Migrations
                         .IsRequired()
                         .HasColumnType("varbinary(max)");
 
-                    b.Property<Guid>("FromUserId")
+                    b.Property<Guid>("FromDeviceId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<byte[]>("Nonce")
@@ -87,14 +87,17 @@ namespace WebMessages.Data.Migrations
                     b.Property<byte>("Status")
                         .HasColumnType("tinyint");
 
-                    b.Property<Guid>("ToUserId")
+                    b.Property<Guid>("ToDeviceId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("ToUserId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("FromUserId");
+                    b.HasIndex("FromDeviceId");
 
-                    b.HasIndex("ToUserId");
+                    b.HasIndex("ToDeviceId");
 
                     b.ToTable("Messages");
                 });
@@ -143,30 +146,33 @@ namespace WebMessages.Data.Migrations
 
             modelBuilder.Entity("WebMessages.Models.Entities.Message", b =>
                 {
-                    b.HasOne("WebMessages.Models.Entities.User", "FromUser")
+                    b.HasOne("WebMessages.Models.Entities.Device", "FromDevice")
                         .WithMany("MessagesSent")
-                        .HasForeignKey("FromUserId")
+                        .HasForeignKey("FromDeviceId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("WebMessages.Models.Entities.User", "ToUser")
+                    b.HasOne("WebMessages.Models.Entities.Device", "ToDevice")
                         .WithMany("MessagesReceived")
-                        .HasForeignKey("ToUserId")
+                        .HasForeignKey("ToDeviceId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.Navigation("FromUser");
+                    b.Navigation("FromDevice");
 
-                    b.Navigation("ToUser");
+                    b.Navigation("ToDevice");
+                });
+
+            modelBuilder.Entity("WebMessages.Models.Entities.Device", b =>
+                {
+                    b.Navigation("MessagesReceived");
+
+                    b.Navigation("MessagesSent");
                 });
 
             modelBuilder.Entity("WebMessages.Models.Entities.User", b =>
                 {
                     b.Navigation("Devices");
-
-                    b.Navigation("MessagesReceived");
-
-                    b.Navigation("MessagesSent");
                 });
 #pragma warning restore 612, 618
         }

@@ -18,4 +18,7 @@ public class Device
 
     [ForeignKey("UserId")]
     public virtual User? User { get; set; }
+
+    public virtual ICollection<Message> MessagesSent { get; set; } = new List<Message>();
+    public virtual ICollection<Message> MessagesReceived { get; set; } = new List<Message>();
 }

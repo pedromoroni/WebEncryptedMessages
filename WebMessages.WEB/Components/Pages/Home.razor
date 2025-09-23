@@ -1,57 +1,143 @@
 ﻿@page "/home"
-@attribute [StreamRendering]
+@using System.Security.Cryptography
+@using System.Text
+@using WebMessages.WEB.Models
+
 @rendermode InteractiveServer
-@inject NavigationManager NavigationManager
-@inject HttpClient Http
 
-@using Microsoft.AspNetCore.SignalR.Client
-@using Microsoft.AspNetCore.Http.Connections
+@inject NavigationManager Navigation
+@inject HttpClient httpClient
+@inject KeyStorageService KeyStorage
 
-<h3>Status do Pedido</h3>
+<h3>Send Encrypted Message</h3>
 
-<p><strong>@message</strong></p>
+<input type="text"
+       value="@Username"
+       @oninput="OnInputChanged"
+       placeholder="Search User..." />
 
-<button @onclick=@SendHello>Enviar Hello World (orderId = 5)</button>
+<select @bind="ToUserId" style="min-width: 200px;">
+    <option value="">Select User</option>
+    @foreach (User user in Users)
+    {
+        <option value="@user.Id">@user.Username</option>
+    }
+</select>
+
+<br />
+<input type="text" @bind="Message" placeholder="Type your message..." />
+<button @onclick="SendMessage">Send Message</button>
 
 @code {
-    private HubConnection? _hubConnection;
-    private string message = "Aguardando notificações...";
+    private Guid ToUserId { get; set; }
+    private string Username { get; set; } = string.Empty;
+    private string Message { get; set; } = string.Empty;
 
-    protected override async Task OnInitializedAsync()
+    private List<User> Users { get; set; } = new List<User>();
+
+    private CancellationTokenSource? _cts;
+
+    protected async override Task OnInitializedAsync()
     {
-        var hubUrl = "https://localhost:7051/orderHub"; 
-
-        _hubConnection = new HubConnectionBuilder()
-            .WithUrl(hubUrl, options =>
-            {
-                options.Transports = HttpTransportType.WebSockets; // agora reconhece
-            })
-            .WithAutomaticReconnect()
-            .Build();
-
-        _hubConnection.On<object>("OrderStatusUpdated", (order) =>
+        if (Helper.LoggedUser == null)
         {
-            message = System.Text.Json.JsonSerializer.Serialize(order);
-            InvokeAsync(StateHasChanged);
-        });
-
-        await _hubConnection.StartAsync();
-        await _hubConnection.InvokeAsync("SubscribeToOrder", "5");
-    }
-
-    private async Task SendHello()
-    {
-        // Chama a API que dispara a mensagem
-        var response = await Http.PostAsync("Users/notify/5", null);
-
-        Console.WriteLine(response);
-    }
-
-    public async ValueTask DisposeAsync()
-    {
-        if (_hubConnection is not null)
-        {
-            await _hubConnection.DisposeAsync();
+            Navigation.NavigateTo("/");
         }
     }
+
+    private async Task OnInputChanged(ChangeEventArgs e)
+    {
+        Username = e.Value?.ToString() ?? string.Empty;
+        await SearchUsersAsync();
+    }
+
+    private async Task SearchUsersAsync()
+    {
+        _cts?.Cancel();
+        _cts = new CancellationTokenSource();
+        var token = _cts.Token;
+
+        if (string.IsNullOrWhiteSpace(Username))
+        {
+            Users.Clear();
+            return;
+        }
+
+        try
+        {
+            await Task.Delay(300, token);
+
+            var url = $"Users/search?username={Uri.EscapeDataString(Username)}";
+            var response = await httpClient.GetAsync(url, token);
+            response.EnsureSuccessStatusCode();
+
+            if (!token.IsCancellationRequested && response is not null)
+            {
+                var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+                var users = await response.Content.ReadFromJsonAsync<List<User>>(options);
+                Users = users ?? new List<User>();
+                StateHasChanged();
+            }
+        }
+        catch (TaskCanceledException) { }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error: {ex.Message}");
+        }
+    }
+
+    private async Task SendMessage()
+    {
+        if (string.IsNullOrEmpty(Message))
+        {
+            Console.WriteLine("Invalid Message.");
+            return;
+        }
+
+        try
+        {
+            var url = $"Devices/getDevicesByUserId?userId={ToUserId}";
+            var response = await httpClient.GetAsync(url);
+            response.EnsureSuccessStatusCode();
+
+            var devices = await response.Content.ReadFromJsonAsync<List<Device>>();
+            if (devices == null || devices.Count == 0)
+                throw new Exception("Device Not Found.");
+
+            ECDHKeyPair senderKeys = await KeyStorage.GetKeysAsync(Helper.LoggedUser.Username); 
+            List<Message> encryptedMessages = new List<Message>();
+
+            foreach (Device device in devices)
+            {
+                byte[] recipientPubKey = device.PublicKey;
+
+                var msg = E2E.Encrypt(
+                    Message,
+                    fromDeviceId: Helper.LoggedDevice.Id, // ID do dispositivo local
+                    toDeviceId: device.Id,   // ID do dispositivo remoto
+                    recipientPublicKey: recipientPubKey
+                );
+
+                encryptedMessages.Add(msg);
+            }
+
+            if (encryptedMessages.Count > 0)
+            {
+                var json = JsonSerializer.Serialize(encryptedMessages);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+                var sendResponse = await httpClient.PostAsync("Messages/send", content);
+                sendResponse.EnsureSuccessStatusCode();
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error sending message: {ex.Message}");
+        }
+    }
+
+    // TO DO:
+    // ao enviar uma mensagem para o utilizador também é preciso enviar essa mesma mensagem para si mesmo para ser possivel desencriptar
+    // entao iremos guardar na messages sent so a nossa versao e nas mensagens received de quem recebeu sera armazenada a mensagem
 }
+
+                

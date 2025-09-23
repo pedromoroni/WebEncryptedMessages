@@ -11,6 +11,7 @@ public interface IDeviceRepository
 {
     Task<Device?> GetDeviceByPublicKeyAndUserAsync(byte[] publicKey, User user);
     Task<Device?> GetDeviceByPublicKeyAsync(byte[] publicKey);
+    Task<List<Device>> GetAllDevicesByUserIdAsync(Guid userId);
     Task<int> GetQuantityOfDevicesByUserAsync(User user);
     Task<Device?> GetOldestSeenDeviceByUserAsync(User user);
     Task DeleteDeviceAsync(Device device);

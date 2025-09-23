@@ -1,11 +1,9 @@
 ﻿@inherits LayoutComponentBase
 @inject NavigationManager NavigationManager
+@inject MySidebarService MySidebarService
 
 <div class="page">
-    <!--<div class="sidebar">
-        <NavMenu />
-    </div>
-    -->
+    <WebMessages.WEB.Modals.MySidebar Contacts="MySidebarService.Contacts"></WebMessages.WEB.Modals.MySidebar>
     <main>
         <article class="content px-4">
             @Body
@@ -19,3 +17,20 @@
     <span class="dismiss">🗙</span>
 </div>
 
+
+@code {
+    private Task HandleBreadcrumbChanged()
+    {
+        return InvokeAsync(StateHasChanged);
+    }
+
+    protected override void OnInitialized()
+    {
+        MySidebarService.OnChange += HandleBreadcrumbChanged;
+    }
+
+    public void Dispose()
+    {
+        MySidebarService.OnChange -= HandleBreadcrumbChanged;
+    }
+}

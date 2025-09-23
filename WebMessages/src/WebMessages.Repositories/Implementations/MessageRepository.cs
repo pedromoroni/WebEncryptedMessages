@@ -18,7 +18,7 @@ public class MessageRepository : IMessageRepository
         _context = context;
     }
 
-    public async Task AddAsyncMessage(Message message)
+    public async Task AddMessageAsync(Message message)
     {
         _context.Messages.Add(message);
         await _context.SaveChangesAsync();

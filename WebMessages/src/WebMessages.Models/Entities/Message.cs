@@ -9,9 +9,9 @@ public class Message
     public Guid Id { get; set; }
 
     [Required]
-    public Guid FromUserId { get; set; }
+    public Guid FromDeviceId { get; set; }
     [Required]
-    public Guid ToUserId { get; set; }
+    public Guid ToDeviceId { get; set; }
 
     public byte[] CipherText { get; set; } // mensagem cifrada
     public byte[] Nonce { get; set; } // nonce unico por mensagem
@@ -21,11 +21,10 @@ public class Message
     public DateTimeOffset? DeliveredAt { get; set; }
     public DateTimeOffset? ReadAt { get; set; }
 
-    [ForeignKey("FromUserId")]
-    public User? FromUser { get; set; }
+    [ForeignKey("FromDeviceId")]
+    public Device? FromDevice { get; set; }
     [ForeignKey("ToUserId")]
-    public User? ToUser { get; set; }
-
+    public Device? ToDevice { get; set; }
 }
 
 public enum MessageStatus : byte

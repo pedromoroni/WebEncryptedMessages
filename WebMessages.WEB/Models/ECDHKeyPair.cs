@@ -4,8 +4,8 @@ using System.Security.Cryptography;
 
 namespace WebMessages.WEB.Models;
 
-public class RSAKeyPair
+public class ECDHKeyPair
 {
-    public string PublicKey { get; set; }
-    public string PrivateKey { get; set; }
+    public byte[] PublicKey { get; set; }
+    public byte[] PrivateKey { get; set; }
 }

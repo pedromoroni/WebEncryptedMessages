@@ -54,29 +54,30 @@ namespace WebMessages.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    FromUserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    ToUserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    FromDeviceId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    ToDeviceId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     CipherText = table.Column<byte[]>(type: "varbinary(max)", nullable: false),
                     Nonce = table.Column<byte[]>(type: "varbinary(max)", nullable: false),
                     EphemeralPub = table.Column<byte[]>(type: "varbinary(max)", nullable: false),
                     Status = table.Column<byte>(type: "tinyint", nullable: false),
                     CreatedAt = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
                     DeliveredAt = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
-                    ReadAt = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true)
+                    ReadAt = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    ToUserId = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Messages", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Messages_Users_FromUserId",
-                        column: x => x.FromUserId,
-                        principalTable: "Users",
+                        name: "FK_Messages_Devices_FromDeviceId",
+                        column: x => x.FromDeviceId,
+                        principalTable: "Devices",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Messages_Users_ToUserId",
-                        column: x => x.ToUserId,
-                        principalTable: "Users",
+                        name: "FK_Messages_Devices_ToDeviceId",
+                        column: x => x.ToDeviceId,
+                        principalTable: "Devices",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
@@ -87,14 +88,14 @@ namespace WebMessages.Data.Migrations
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Messages_FromUserId",
+                name: "IX_Messages_FromDeviceId",
                 table: "Messages",
-                column: "FromUserId");
+                column: "FromDeviceId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Messages_ToUserId",
+                name: "IX_Messages_ToDeviceId",
                 table: "Messages",
-                column: "ToUserId");
+                column: "ToDeviceId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Users_Username",
@@ -107,10 +108,10 @@ namespace WebMessages.Data.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Devices");
+                name: "Messages");
 
             migrationBuilder.DropTable(
-                name: "Messages");
+                name: "Devices");
 
             migrationBuilder.DropTable(
                 name: "Users");

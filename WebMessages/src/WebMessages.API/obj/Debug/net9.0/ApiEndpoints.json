@@ -1,15 +1,52 @@
 [
   {
+    "ContainingType": "WebMessages.API.Controllers.DevicesController",
+    "Method": "SearchUsers",
+    "RelativePath": "api/Devices/getPublicKeysDevicesByUserId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ],
+    "Summary": "Get Public Keys Of Devices by UserId"
+  },
+  {
     "ContainingType": "WebMessages.API.Controllers.MessagesController",
-    "Method": "AddMessage",
-    "RelativePath": "api/Messages/add",
+    "Method": "SendMessages",
+    "RelativePath": "api/Messages/send",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "request",
-        "Type": "WebMessages.Models.DTOs.Messages.MessageRequest",
+        "Type": "System.Collections.Generic.List\u00601[[WebMessages.Models.DTOs.Messages.MessageRequest, WebMessages.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "IsRequired": true
       }
     ],
@@ -25,7 +62,7 @@
         "StatusCode": 500
       }
     ],
-    "Summary": "Add message to user"
+    "Summary": "Send message to user"
   },
   {
     "ContainingType": "WebMessages.API.Controllers.UsersController",
@@ -66,6 +103,38 @@
   },
   {
     "ContainingType": "WebMessages.API.Controllers.UsersController",
+    "Method": "GetUserByDeviceId",
+    "RelativePath": "api/Users/getUserByDeviceId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "deviceId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebMessages.Models.DTOs.Users.UserDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ],
+    "Summary": "Get User by DevicedId"
+  },
+  {
+    "ContainingType": "WebMessages.API.Controllers.UsersController",
     "Method": "AuthenticateUser",
     "RelativePath": "api/Users/login",
     "HttpMethod": "POST",
@@ -76,6 +145,16 @@
         "Name": "userCredentials",
         "Type": "WebMessages.Models.DTOs.UserDevice.UserDeviceRequest",
         "IsRequired": true
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -95,5 +174,42 @@
       }
     ],
     "Summary": "Authenticate User"
+  },
+  {
+    "ContainingType": "WebMessages.API.Controllers.UsersController",
+    "Method": "SearchUsers",
+    "RelativePath": "api/Users/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ],
+    "Summary": "Search Users"
   }
 ]

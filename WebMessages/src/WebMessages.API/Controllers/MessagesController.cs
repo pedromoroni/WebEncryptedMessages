@@ -11,21 +11,23 @@ namespace WebMessages.API.Controllers;
 public class MessagesController : ControllerBase
 {
     private readonly IMessageService _messageService;
+    private readonly IUserService _userService;
 
-    public MessagesController(IMessageService messageService)
+    public MessagesController(IMessageService messageService, IUserService userService)
     {
         _messageService = messageService;
+        _userService = userService;
     }
 
-    [HttpPost("add")]
-    [EndpointSummary("Add message to user")]
+    [HttpPost("send")]
+    [EndpointSummary("Send message to user")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-    public async Task<IActionResult> AddMessage([FromBody] MessageRequest request)
+    public async Task<IActionResult> SendMessages([FromBody] List<MessageRequest> request)
     {
         try
         {
-            await _messageService.AddMessage(request);
+            await _messageService.SendMessages(request);
             return Ok();
         }
         catch (Exception)

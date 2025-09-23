@@ -33,17 +33,40 @@ public class UsersController : ControllerBase
         _hubContext = hubContext;
     }
 
+    [HttpGet("getUserByDeviceId")]
+    [EndpointSummary("Get User by DevicedId")]
+    [ProducesResponseType<UserDto>(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+    public async Task<IActionResult> GetUserByDeviceId([FromQuery] Guid deviceId)
+    {
+        try
+        {
+            var response = await _userService.GetUserByDeviceIdAsync(deviceId);
+            return Ok(response);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+        }
+    }
+
     [HttpPost("login")]
     [EndpointSummary("Authenticate User")]
     [ProducesResponseType<UserDto>(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-    public async Task<IActionResult> AuthenticateUser([FromBody] UserDeviceRequest userCredentials)
+    public async Task<IActionResult> AuthenticateUser([FromBody] UserDeviceRequest userCredentials, [FromQuery] int pageSize, [FromQuery] int pageNumber)
     {
         try
         {
             await _deviceService.RegisterDeviceAsync(userCredentials);
 
-            var response = await _userService.GetUserAsync(userCredentials.User);
+            QueryInfo queryInfo = new QueryInfo
+            {
+                PageSize = pageSize,
+                PageNumber = pageNumber
+            };
+
+            var response = await _userService.GetUserAsync(userCredentials.User, queryInfo);
             return Ok(response);
         }
         catch (Exception ex)
@@ -74,18 +97,38 @@ public class UsersController : ControllerBase
         }
     }
 
-    /*[HttpPost("notify/{orderId}")]
-    public async Task<IActionResult> Notify(string orderId)
+    [HttpGet("search")]
+    [EndpointSummary("Search Users")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+    public async Task<IActionResult> SearchUsers([FromQuery] string username)
     {
-        // Envia para todos os clientes inscritos nesse orderId
-        await _hubContext.Clients.Group(orderId).SendAsync("OrderStatusUpdated",
-            new { Id = orderId, Status = "Hello World" });
-
-        return Ok(new { Message = $"Notificação enviada para order {orderId}" });
-    }*/
+        // TO DO: adicionar query info 
+        try
+        {
+            var response = await _userService.SearchUsernamesStartingWithAsync(username);
+            return Ok(response);
+        }
+        catch (InvalidOperationException ex)
+        {
+            return BadRequest(ex.Message);
+        }
+        catch (Exception)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred while creating the user.");
+        }
+    }
 }
 
 // verificaçoes para impedir que o public key seja invalido
-// melhorar a organizacao das pastas
-// testar
-// fazer verificacoes
+
+/*[HttpPost("notify/{orderId}")]
+public async Task<IActionResult> Notify(string orderId)
+{
+    // Envia para todos os clientes inscritos nesse orderId
+    await _hubContext.Clients.Group(orderId).SendAsync("OrderStatusUpdated",
+        new { Id = orderId, Status = "Hello World" });
+
+    return Ok(new { Message = $"Notificação enviada para order {orderId}" });
+}*/

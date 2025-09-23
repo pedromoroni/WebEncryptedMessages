@@ -3,112 +3,132 @@
   "WorkspaceRootPath": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{364D5443-A86D-4C56-87EA-62DCA1541546}|src\\WebMessages.API\\WebMessages.API.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{364D5443-A86D-4C56-87EA-62DCA1541546}|src\\WebMessages.API\\WebMessages.API.csproj|solutionrelative:src\\webmessages.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB637DAC-D005-4142-B996-0A3CDF41C08D}|src\\WebMessages.Services\\WebMessages.Services.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.services\\interfaces\\ideviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB637DAC-D005-4142-B996-0A3CDF41C08D}|src\\WebMessages.Services\\WebMessages.Services.csproj|solutionrelative:src\\webmessages.services\\interfaces\\ideviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB637DAC-D005-4142-B996-0A3CDF41C08D}|src\\WebMessages.Services\\WebMessages.Services.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.services\\implementations\\deviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB637DAC-D005-4142-B996-0A3CDF41C08D}|src\\WebMessages.Services\\WebMessages.Services.csproj|solutionrelative:src\\webmessages.services\\implementations\\deviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1EB4A8B-36FA-45D9-BB92-2003C12C20E5}|src\\WebMessages.Repositories\\WebMessages.Repositories.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.repositories\\interfaces\\idevicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1EB4A8B-36FA-45D9-BB92-2003C12C20E5}|src\\WebMessages.Repositories\\WebMessages.Repositories.csproj|solutionrelative:src\\webmessages.repositories\\interfaces\\idevicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1EB4A8B-36FA-45D9-BB92-2003C12C20E5}|src\\WebMessages.Repositories\\WebMessages.Repositories.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.repositories\\implementations\\devicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1EB4A8B-36FA-45D9-BB92-2003C12C20E5}|src\\WebMessages.Repositories\\WebMessages.Repositories.csproj|solutionrelative:src\\webmessages.repositories\\implementations\\devicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB637DAC-D005-4142-B996-0A3CDF41C08D}|src\\WebMessages.Services\\WebMessages.Services.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.services\\implementations\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB637DAC-D005-4142-B996-0A3CDF41C08D}|src\\WebMessages.Services\\WebMessages.Services.csproj|solutionrelative:src\\webmessages.services\\implementations\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB637DAC-D005-4142-B996-0A3CDF41C08D}|src\\WebMessages.Services\\WebMessages.Services.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB637DAC-D005-4142-B996-0A3CDF41C08D}|src\\WebMessages.Services\\WebMessages.Services.csproj|solutionrelative:src\\webmessages.services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.models\\entities\\device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|solutionrelative:src\\webmessages.models\\entities\\device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1EB4A8B-36FA-45D9-BB92-2003C12C20E5}|src\\WebMessages.Repositories\\WebMessages.Repositories.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.repositories\\interfaces\\imessagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1EB4A8B-36FA-45D9-BB92-2003C12C20E5}|src\\WebMessages.Repositories\\WebMessages.Repositories.csproj|solutionrelative:src\\webmessages.repositories\\interfaces\\imessagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1EB4A8B-36FA-45D9-BB92-2003C12C20E5}|src\\WebMessages.Repositories\\WebMessages.Repositories.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.repositories\\implementations\\messagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1EB4A8B-36FA-45D9-BB92-2003C12C20E5}|src\\WebMessages.Repositories\\WebMessages.Repositories.csproj|solutionrelative:src\\webmessages.repositories\\implementations\\messagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1EB4A8B-36FA-45D9-BB92-2003C12C20E5}|src\\WebMessages.Repositories\\WebMessages.Repositories.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.repositories\\implementations\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1EB4A8B-36FA-45D9-BB92-2003C12C20E5}|src\\WebMessages.Repositories\\WebMessages.Repositories.csproj|solutionrelative:src\\webmessages.repositories\\implementations\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB637DAC-D005-4142-B996-0A3CDF41C08D}|src\\WebMessages.Services\\WebMessages.Services.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.services\\interfaces\\imessageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB637DAC-D005-4142-B996-0A3CDF41C08D}|src\\WebMessages.Services\\WebMessages.Services.csproj|solutionrelative:src\\webmessages.services\\interfaces\\imessageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1EB4A8B-36FA-45D9-BB92-2003C12C20E5}|src\\WebMessages.Repositories\\WebMessages.Repositories.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1EB4A8B-36FA-45D9-BB92-2003C12C20E5}|src\\WebMessages.Repositories\\WebMessages.Repositories.csproj|solutionrelative:src\\webmessages.repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.models\\dtos\\users\\usercredentialsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|solutionrelative:src\\webmessages.models\\dtos\\users\\usercredentialsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.models\\dtos\\userdevice\\userdevicerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|solutionrelative:src\\webmessages.models\\dtos\\userdevice\\userdevicerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{364D5443-A86D-4C56-87EA-62DCA1541546}|src\\WebMessages.API\\WebMessages.API.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.api\\controllers\\messagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{364D5443-A86D-4C56-87EA-62DCA1541546}|src\\WebMessages.API\\WebMessages.API.csproj|solutionrelative:src\\webmessages.api\\controllers\\messagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.models\\entities\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|solutionrelative:src\\webmessages.models\\entities\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB637DAC-D005-4142-B996-0A3CDF41C08D}|src\\WebMessages.Services\\WebMessages.Services.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB637DAC-D005-4142-B996-0A3CDF41C08D}|src\\WebMessages.Services\\WebMessages.Services.csproj|solutionrelative:src\\webmessages.services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.models\\dtos\\devices\\devicerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|solutionrelative:src\\webmessages.models\\dtos\\devices\\devicerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{364D5443-A86D-4C56-87EA-62DCA1541546}|src\\WebMessages.API\\WebMessages.API.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{364D5443-A86D-4C56-87EA-62DCA1541546}|src\\WebMessages.API\\WebMessages.API.csproj|solutionrelative:src\\webmessages.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.models\\dtos\\users\\createuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|solutionrelative:src\\webmessages.models\\dtos\\users\\createuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.models\\dtos\\users\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|solutionrelative:src\\webmessages.models\\dtos\\users\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{364D5443-A86D-4C56-87EA-62DCA1541546}|src\\WebMessages.API\\WebMessages.API.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.api\\controllers\\devicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{364D5443-A86D-4C56-87EA-62DCA1541546}|src\\WebMessages.API\\WebMessages.API.csproj|solutionrelative:src\\webmessages.api\\controllers\\devicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.models\\dtos\\messages\\messagerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|solutionrelative:src\\webmessages.models\\dtos\\messages\\messagerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|solutionrelative:src\\webmessages.models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DB637DAC-D005-4142-B996-0A3CDF41C08D}|src\\WebMessages.Services\\WebMessages.Services.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.services\\interfaces\\ideviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB637DAC-D005-4142-B996-0A3CDF41C08D}|src\\WebMessages.Services\\WebMessages.Services.csproj|solutionrelative:src\\webmessages.services\\interfaces\\ideviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1EB4A8B-36FA-45D9-BB92-2003C12C20E5}|src\\WebMessages.Repositories\\WebMessages.Repositories.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.repositories\\interfaces\\idevicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1EB4A8B-36FA-45D9-BB92-2003C12C20E5}|src\\WebMessages.Repositories\\WebMessages.Repositories.csproj|solutionrelative:src\\webmessages.repositories\\interfaces\\idevicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB637DAC-D005-4142-B996-0A3CDF41C08D}|src\\WebMessages.Services\\WebMessages.Services.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.services\\implementations\\deviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB637DAC-D005-4142-B996-0A3CDF41C08D}|src\\WebMessages.Services\\WebMessages.Services.csproj|solutionrelative:src\\webmessages.services\\implementations\\deviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1EB4A8B-36FA-45D9-BB92-2003C12C20E5}|src\\WebMessages.Repositories\\WebMessages.Repositories.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.repositories\\implementations\\devicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1EB4A8B-36FA-45D9-BB92-2003C12C20E5}|src\\WebMessages.Repositories\\WebMessages.Repositories.csproj|solutionrelative:src\\webmessages.repositories\\implementations\\devicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{364D5443-A86D-4C56-87EA-62DCA1541546}|src\\WebMessages.API\\WebMessages.API.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{364D5443-A86D-4C56-87EA-62DCA1541546}|src\\WebMessages.API\\WebMessages.API.csproj|solutionrelative:src\\webmessages.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB637DAC-D005-4142-B996-0A3CDF41C08D}|src\\WebMessages.Services\\WebMessages.Services.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB637DAC-D005-4142-B996-0A3CDF41C08D}|src\\WebMessages.Services\\WebMessages.Services.csproj|solutionrelative:src\\webmessages.services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.models\\dtos\\devices\\devicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|solutionrelative:src\\webmessages.models\\dtos\\devices\\devicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB637DAC-D005-4142-B996-0A3CDF41C08D}|src\\WebMessages.Services\\WebMessages.Services.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB637DAC-D005-4142-B996-0A3CDF41C08D}|src\\WebMessages.Services\\WebMessages.Services.csproj|solutionrelative:src\\webmessages.services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.models\\dtos\\userdevice\\userdevicerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|solutionrelative:src\\webmessages.models\\dtos\\userdevice\\userdevicerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.models\\dtos\\messages\\receivemessagesrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|solutionrelative:src\\webmessages.models\\dtos\\messages\\receivemessagesrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.models\\dtos\\messages\\messagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|solutionrelative:src\\webmessages.models\\dtos\\messages\\messagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{364D5443-A86D-4C56-87EA-62DCA1541546}|src\\WebMessages.API\\WebMessages.API.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.api\\controllers\\messagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{364D5443-A86D-4C56-87EA-62DCA1541546}|src\\WebMessages.API\\WebMessages.API.csproj|solutionrelative:src\\webmessages.api\\controllers\\messagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1EB4A8B-36FA-45D9-BB92-2003C12C20E5}|src\\WebMessages.Repositories\\WebMessages.Repositories.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1EB4A8B-36FA-45D9-BB92-2003C12C20E5}|src\\WebMessages.Repositories\\WebMessages.Repositories.csproj|solutionrelative:src\\webmessages.repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1EB4A8B-36FA-45D9-BB92-2003C12C20E5}|src\\WebMessages.Repositories\\WebMessages.Repositories.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.repositories\\interfaces\\imessagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1EB4A8B-36FA-45D9-BB92-2003C12C20E5}|src\\WebMessages.Repositories\\WebMessages.Repositories.csproj|solutionrelative:src\\webmessages.repositories\\interfaces\\imessagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.models\\entities\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|solutionrelative:src\\webmessages.models\\entities\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1EB4A8B-36FA-45D9-BB92-2003C12C20E5}|src\\WebMessages.Repositories\\WebMessages.Repositories.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.repositories\\implementations\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1EB4A8B-36FA-45D9-BB92-2003C12C20E5}|src\\WebMessages.Repositories\\WebMessages.Repositories.csproj|solutionrelative:src\\webmessages.repositories\\implementations\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.models\\dtos\\users\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|solutionrelative:src\\webmessages.models\\dtos\\users\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.models\\dtos\\queryinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|solutionrelative:src\\webmessages.models\\dtos\\queryinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D67E1FF-1BAE-454E-B839-DBD31FD3D717}|src\\WebMessages.Data\\WebMessages.Data.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D67E1FF-1BAE-454E-B839-DBD31FD3D717}|src\\WebMessages.Data\\WebMessages.Data.csproj|solutionrelative:src\\webmessages.data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{364D5443-A86D-4C56-87EA-62DCA1541546}|src\\WebMessages.API\\WebMessages.API.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{364D5443-A86D-4C56-87EA-62DCA1541546}|src\\WebMessages.API\\WebMessages.API.csproj|solutionrelative:src\\webmessages.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{DB637DAC-D005-4142-B996-0A3CDF41C08D}|src\\WebMessages.Services\\WebMessages.Services.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.services\\implementations\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB637DAC-D005-4142-B996-0A3CDF41C08D}|src\\WebMessages.Services\\WebMessages.Services.csproj|solutionrelative:src\\webmessages.services\\implementations\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1EB4A8B-36FA-45D9-BB92-2003C12C20E5}|src\\WebMessages.Repositories\\WebMessages.Repositories.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.repositories\\implementations\\messagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1EB4A8B-36FA-45D9-BB92-2003C12C20E5}|src\\WebMessages.Repositories\\WebMessages.Repositories.csproj|solutionrelative:src\\webmessages.repositories\\implementations\\messagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.models\\dtos\\devices\\devicerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|solutionrelative:src\\webmessages.models\\dtos\\devices\\devicerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.models\\dtos\\users\\usercredentialsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|solutionrelative:src\\webmessages.models\\dtos\\users\\usercredentialsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|solutionrelative:src\\webmessages.models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.models\\dtos\\users\\createuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|solutionrelative:src\\webmessages.models\\dtos\\users\\createuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.models\\entities\\device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|solutionrelative:src\\webmessages.models\\entities\\device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB637DAC-D005-4142-B996-0A3CDF41C08D}|src\\WebMessages.Services\\WebMessages.Services.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.services\\interfaces\\imessageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB637DAC-D005-4142-B996-0A3CDF41C08D}|src\\WebMessages.Services\\WebMessages.Services.csproj|solutionrelative:src\\webmessages.services\\interfaces\\imessageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{364D5443-A86D-4C56-87EA-62DCA1541546}|src\\WebMessages.API\\WebMessages.API.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{364D5443-A86D-4C56-87EA-62DCA1541546}|src\\WebMessages.API\\WebMessages.API.csproj|solutionrelative:src\\webmessages.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{364D5443-A86D-4C56-87EA-62DCA1541546}|src\\WebMessages.API\\WebMessages.API.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{364D5443-A86D-4C56-87EA-62DCA1541546}|src\\WebMessages.API\\WebMessages.API.csproj|solutionrelative:src\\webmessages.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{364D5443-A86D-4C56-87EA-62DCA1541546}|src\\WebMessages.API\\WebMessages.API.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{364D5443-A86D-4C56-87EA-62DCA1541546}|src\\WebMessages.API\\WebMessages.API.csproj|solutionrelative:src\\webmessages.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{364D5443-A86D-4C56-87EA-62DCA1541546}|src\\WebMessages.API\\WebMessages.API.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.api\\hubs\\orderhub .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -125,10 +145,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D1EB4A8B-36FA-45D9-BB92-2003C12C20E5}|src\\WebMessages.Repositories\\WebMessages.Repositories.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.repositories\\webmessages.repositories.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{D1EB4A8B-36FA-45D9-BB92-2003C12C20E5}|src\\WebMessages.Repositories\\WebMessages.Repositories.csproj|solutionrelative:src\\webmessages.repositories\\webmessages.repositories.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D67E1FF-1BAE-454E-B839-DBD31FD3D717}|src\\WebMessages.Data\\WebMessages.Data.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.data\\migrations\\20250916201247_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D67E1FF-1BAE-454E-B839-DBD31FD3D717}|src\\WebMessages.Data\\WebMessages.Data.csproj|solutionrelative:src\\webmessages.data\\migrations\\20250916201247_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -138,7 +154,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -146,54 +162,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DeviceService.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Services\\Implementations\\DeviceService.cs",
-              "RelativeDocumentMoniker": "src\\WebMessages.Services\\Implementations\\DeviceService.cs",
-              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Services\\Implementations\\DeviceService.cs",
-              "RelativeToolTip": "src\\WebMessages.Services\\Implementations\\DeviceService.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAmwBkAAABOAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "DevicesController.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.API\\Controllers\\DevicesController.cs",
+              "RelativeDocumentMoniker": "src\\WebMessages.API\\Controllers\\DevicesController.cs",
+              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.API\\Controllers\\DevicesController.cs",
+              "RelativeToolTip": "src\\WebMessages.API\\Controllers\\DevicesController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAswCcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T20:59:19.736Z",
+              "WhenOpened": "2025-09-10T00:50:20.481Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DeviceRepository.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Repositories\\Implementations\\DeviceRepository.cs",
-              "RelativeDocumentMoniker": "src\\WebMessages.Repositories\\Implementations\\DeviceRepository.cs",
-              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Repositories\\Implementations\\DeviceRepository.cs",
-              "RelativeToolTip": "src\\WebMessages.Repositories\\Implementations\\DeviceRepository.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAUwBwAAABKAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "MessageRequest.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\Messages\\MessageRequest.cs",
+              "RelativeDocumentMoniker": "src\\WebMessages.Models\\DTOs\\Messages\\MessageRequest.cs",
+              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\Messages\\MessageRequest.cs",
+              "RelativeToolTip": "src\\WebMessages.Models\\DTOs\\Messages\\MessageRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T20:57:26.171Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Device.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\Entities\\Device.cs",
-              "RelativeDocumentMoniker": "src\\WebMessages.Models\\Entities\\Device.cs",
-              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\Entities\\Device.cs",
-              "RelativeToolTip": "src\\WebMessages.Models\\Entities\\Device.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T18:04:55.544Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MessageRepository.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Repositories\\Implementations\\MessageRepository.cs",
-              "RelativeDocumentMoniker": "src\\WebMessages.Repositories\\Implementations\\MessageRepository.cs",
-              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Repositories\\Implementations\\MessageRepository.cs",
-              "RelativeToolTip": "src\\WebMessages.Repositories\\Implementations\\MessageRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T00:52:13.899Z",
+              "WhenOpened": "2025-09-10T00:59:14.44Z",
               "EditorCaption": ""
             },
             {
@@ -204,72 +194,98 @@
               "RelativeDocumentMoniker": "src\\WebMessages.Repositories\\Interfaces\\IDeviceRepository.cs",
               "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Repositories\\Interfaces\\IDeviceRepository.cs",
               "RelativeToolTip": "src\\WebMessages.Repositories\\Interfaces\\IDeviceRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-18T20:57:45.878Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IMessageRepository.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Repositories\\Interfaces\\IMessageRepository.cs",
-              "RelativeDocumentMoniker": "src\\WebMessages.Repositories\\Interfaces\\IMessageRepository.cs",
-              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Repositories\\Interfaces\\IMessageRepository.cs",
-              "RelativeToolTip": "src\\WebMessages.Repositories\\Interfaces\\IMessageRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "DeviceService.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Services\\Implementations\\DeviceService.cs",
+              "RelativeDocumentMoniker": "src\\WebMessages.Services\\Implementations\\DeviceService.cs",
+              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Services\\Implementations\\DeviceService.cs",
+              "RelativeToolTip": "src\\WebMessages.Services\\Implementations\\DeviceService.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAiwFkAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T00:53:06.8Z",
+              "WhenOpened": "2025-09-18T20:59:19.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DeviceDTO.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\Devices\\DeviceDTO.cs",
+              "RelativeDocumentMoniker": "src\\WebMessages.Models\\DTOs\\Devices\\DeviceDTO.cs",
+              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\Devices\\DeviceDTO.cs",
+              "RelativeToolTip": "src\\WebMessages.Models\\DTOs\\Devices\\DeviceDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T17:40:58.029Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "MessageService.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Services\\Implementations\\MessageService.cs",
-              "RelativeDocumentMoniker": "src\\WebMessages.Services\\Implementations\\MessageService.cs",
-              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Services\\Implementations\\MessageService.cs",
-              "RelativeToolTip": "src\\WebMessages.Services\\Implementations\\MessageService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAfAAAAAAAAAA==",
+              "Title": "DeviceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Repositories\\Implementations\\DeviceRepository.cs",
+              "RelativeDocumentMoniker": "src\\WebMessages.Repositories\\Implementations\\DeviceRepository.cs",
+              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Repositories\\Implementations\\DeviceRepository.cs",
+              "RelativeToolTip": "src\\WebMessages.Repositories\\Implementations\\DeviceRepository.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA8wCMAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T01:10:11.072Z",
+              "WhenOpened": "2025-09-18T20:57:26.171Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Services\\Implementations\\UserService.cs",
-              "RelativeDocumentMoniker": "src\\WebMessages.Services\\Implementations\\UserService.cs",
-              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Services\\Implementations\\UserService.cs",
-              "RelativeToolTip": "src\\WebMessages.Services\\Implementations\\UserService.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBwAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Services\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "src\\WebMessages.Services\\Interfaces\\IUserService.cs",
+              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Services\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "src\\WebMessages.Services\\Interfaces\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T18:33:18.767Z",
+              "WhenOpened": "2025-09-10T00:59:51.968Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "IDeviceService.cs",
               "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Services\\Interfaces\\IDeviceService.cs",
               "RelativeDocumentMoniker": "src\\WebMessages.Services\\Interfaces\\IDeviceService.cs",
               "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Services\\Interfaces\\IDeviceService.cs",
               "RelativeToolTip": "src\\WebMessages.Services\\Interfaces\\IDeviceService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-18T20:59:42.01Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Services\\Implementations\\UserService.cs",
+              "RelativeDocumentMoniker": "src\\WebMessages.Services\\Implementations\\UserService.cs",
+              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Services\\Implementations\\UserService.cs",
+              "RelativeToolTip": "src\\WebMessages.Services\\Implementations\\UserService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T18:33:18.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.API\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "src\\WebMessages.API\\Controllers\\UsersController.cs",
               "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.API\\Controllers\\UsersController.cs",
               "RelativeToolTip": "src\\WebMessages.API\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAQwC8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-08T18:13:52.014Z",
               "EditorCaption": ""
@@ -277,75 +293,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Repositories\\Implementations\\UserRepository.cs",
-              "RelativeDocumentMoniker": "src\\WebMessages.Repositories\\Implementations\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Repositories\\Implementations\\UserRepository.cs",
-              "RelativeToolTip": "src\\WebMessages.Repositories\\Implementations\\UserRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T00:52:22.667Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IMessageService.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Services\\Interfaces\\IMessageService.cs",
-              "RelativeDocumentMoniker": "src\\WebMessages.Services\\Interfaces\\IMessageService.cs",
-              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Services\\Interfaces\\IMessageService.cs",
-              "RelativeToolTip": "src\\WebMessages.Services\\Interfaces\\IMessageService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T01:09:38.831Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Repositories\\Interfaces\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "src\\WebMessages.Repositories\\Interfaces\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Repositories\\Interfaces\\IUserRepository.cs",
-              "RelativeToolTip": "src\\WebMessages.Repositories\\Interfaces\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T18:31:09.144Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UserCredentialsRequest.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\Users\\UserCredentialsRequest.cs",
-              "RelativeDocumentMoniker": "src\\WebMessages.Models\\DTOs\\Users\\UserCredentialsRequest.cs",
-              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\Users\\UserCredentialsRequest.cs",
-              "RelativeToolTip": "src\\WebMessages.Models\\DTOs\\Users\\UserCredentialsRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T00:57:57.082Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "UserDeviceRequest.cs",
               "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\UserDevice\\UserDeviceRequest.cs",
               "RelativeDocumentMoniker": "src\\WebMessages.Models\\DTOs\\UserDevice\\UserDeviceRequest.cs",
               "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\UserDevice\\UserDeviceRequest.cs",
               "RelativeToolTip": "src\\WebMessages.Models\\DTOs\\UserDevice\\UserDeviceRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T21:04:13.172Z"
+              "WhenOpened": "2025-09-16T21:04:13.172Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 11,
+              "Title": "ReceiveMessagesRequest.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\Messages\\ReceiveMessagesRequest.cs",
+              "RelativeDocumentMoniker": "src\\WebMessages.Models\\DTOs\\Messages\\ReceiveMessagesRequest.cs",
+              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\Messages\\ReceiveMessagesRequest.cs",
+              "RelativeToolTip": "src\\WebMessages.Models\\DTOs\\Messages\\ReceiveMessagesRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T22:20:01.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MessageDTO.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\Messages\\MessageDTO.cs",
+              "RelativeDocumentMoniker": "src\\WebMessages.Models\\DTOs\\Messages\\MessageDTO.cs",
+              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\Messages\\MessageDTO.cs",
+              "RelativeToolTip": "src\\WebMessages.Models\\DTOs\\Messages\\MessageDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T17:47:36.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "MessagesController.cs",
               "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.API\\Controllers\\MessagesController.cs",
               "RelativeDocumentMoniker": "src\\WebMessages.API\\Controllers\\MessagesController.cs",
               "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.API\\Controllers\\MessagesController.cs",
               "RelativeToolTip": "src\\WebMessages.API\\Controllers\\MessagesController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAwAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAiwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T00:50:20.481Z"
+              "WhenOpened": "2025-09-20T17:28:50.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Repositories\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "src\\WebMessages.Repositories\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Repositories\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "src\\WebMessages.Repositories\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T18:31:09.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Repositories\\Implementations\\UserRepository.cs",
+              "RelativeDocumentMoniker": "src\\WebMessages.Repositories\\Implementations\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Repositories\\Implementations\\UserRepository.cs",
+              "RelativeToolTip": "src\\WebMessages.Repositories\\Implementations\\UserRepository.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAASwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T00:52:22.667Z"
             },
             {
               "$type": "Document",
@@ -355,25 +375,13 @@
               "RelativeDocumentMoniker": "src\\WebMessages.Models\\Entities\\Message.cs",
               "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\Entities\\Message.cs",
               "RelativeToolTip": "src\\WebMessages.Models\\Entities\\Message.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-08T18:05:05.43Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Services\\Interfaces\\IUserService.cs",
-              "RelativeDocumentMoniker": "src\\WebMessages.Services\\Interfaces\\IUserService.cs",
-              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Services\\Interfaces\\IUserService.cs",
-              "RelativeToolTip": "src\\WebMessages.Services\\Interfaces\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T00:59:51.968Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 23,
               "Title": "DeviceRequest.cs",
               "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\Devices\\DeviceRequest.cs",
               "RelativeDocumentMoniker": "src\\WebMessages.Models\\DTOs\\Devices\\DeviceRequest.cs",
@@ -385,115 +393,139 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.API\\Program.cs",
-              "RelativeDocumentMoniker": "src\\WebMessages.API\\Program.cs",
-              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.API\\Program.cs",
-              "RelativeToolTip": "src\\WebMessages.API\\Program.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAawCwAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T17:50:59.884Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "CreateUserRequest.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\Users\\CreateUserRequest.cs",
-              "RelativeDocumentMoniker": "src\\WebMessages.Models\\DTOs\\Users\\CreateUserRequest.cs",
-              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\Users\\CreateUserRequest.cs",
-              "RelativeToolTip": "src\\WebMessages.Models\\DTOs\\Users\\CreateUserRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T00:22:01.855Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 18,
               "Title": "UserDto.cs",
               "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\Users\\UserDto.cs",
               "RelativeDocumentMoniker": "src\\WebMessages.Models\\DTOs\\Users\\UserDto.cs",
               "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\Users\\UserDto.cs",
               "RelativeToolTip": "src\\WebMessages.Models\\DTOs\\Users\\UserDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-09T00:22:31.964Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "MessageRequest.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\Messages\\MessageRequest.cs",
-              "RelativeDocumentMoniker": "src\\WebMessages.Models\\DTOs\\Messages\\MessageRequest.cs",
-              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\Messages\\MessageRequest.cs",
-              "RelativeToolTip": "src\\WebMessages.Models\\DTOs\\Messages\\MessageRequest.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "IMessageRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Repositories\\Interfaces\\IMessageRepository.cs",
+              "RelativeDocumentMoniker": "src\\WebMessages.Repositories\\Interfaces\\IMessageRepository.cs",
+              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Repositories\\Interfaces\\IMessageRepository.cs",
+              "RelativeToolTip": "src\\WebMessages.Repositories\\Interfaces\\IMessageRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T00:59:14.44Z"
+              "WhenOpened": "2025-09-10T00:53:06.8Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "20250916201247_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Data\\Migrations\\20250916201247_InitialCreate.cs",
-              "RelativeDocumentMoniker": "src\\WebMessages.Data\\Migrations\\20250916201247_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Data\\Migrations\\20250916201247_InitialCreate.cs",
-              "RelativeToolTip": "src\\WebMessages.Data\\Migrations\\20250916201247_InitialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T20:12:48.229Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "src\\WebMessages.Models\\Entities\\User.cs",
-              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\Entities\\User.cs",
-              "RelativeToolTip": "src\\WebMessages.Models\\Entities\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T18:05:10.771Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 20,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "src\\WebMessages.Data\\AppDbContext.cs",
               "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Data\\AppDbContext.cs",
               "RelativeToolTip": "src\\WebMessages.Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAzwAwAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAlwC0AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-08T18:02:46.937Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "OrderHub .cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.API\\Hubs\\OrderHub .cs",
-              "RelativeDocumentMoniker": "src\\WebMessages.API\\Hubs\\OrderHub .cs",
-              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.API\\Hubs\\OrderHub .cs",
-              "RelativeToolTip": "src\\WebMessages.API\\Hubs\\OrderHub .cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "QueryInfo.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\QueryInfo.cs",
+              "RelativeDocumentMoniker": "src\\WebMessages.Models\\DTOs\\QueryInfo.cs",
+              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\QueryInfo.cs",
+              "RelativeToolTip": "src\\WebMessages.Models\\DTOs\\QueryInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T20:08:03.413Z"
+              "WhenOpened": "2025-09-22T16:34:34.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MessageRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Repositories\\Implementations\\MessageRepository.cs",
+              "RelativeDocumentMoniker": "src\\WebMessages.Repositories\\Implementations\\MessageRepository.cs",
+              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Repositories\\Implementations\\MessageRepository.cs",
+              "RelativeToolTip": "src\\WebMessages.Repositories\\Implementations\\MessageRepository.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAewBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T00:52:13.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MessageService.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Services\\Implementations\\MessageService.cs",
+              "RelativeDocumentMoniker": "src\\WebMessages.Services\\Implementations\\MessageService.cs",
+              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Services\\Implementations\\MessageService.cs",
+              "RelativeToolTip": "src\\WebMessages.Services\\Implementations\\MessageService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAqwB0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T01:10:11.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UserCredentialsRequest.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\Users\\UserCredentialsRequest.cs",
+              "RelativeDocumentMoniker": "src\\WebMessages.Models\\DTOs\\Users\\UserCredentialsRequest.cs",
+              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\Users\\UserCredentialsRequest.cs",
+              "RelativeToolTip": "src\\WebMessages.Models\\DTOs\\Users\\UserCredentialsRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T00:57:57.082Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 25,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.API\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "src\\WebMessages.API\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.API\\Properties\\launchSettings.json",
-              "RelativeToolTip": "src\\WebMessages.API\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-15T20:45:31.037Z"
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "src\\WebMessages.Models\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\Entities\\User.cs",
+              "RelativeToolTip": "src\\WebMessages.Models\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T18:05:10.771Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 26,
+              "Title": "CreateUserRequest.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\Users\\CreateUserRequest.cs",
+              "RelativeDocumentMoniker": "src\\WebMessages.Models\\DTOs\\Users\\CreateUserRequest.cs",
+              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\Users\\CreateUserRequest.cs",
+              "RelativeToolTip": "src\\WebMessages.Models\\DTOs\\Users\\CreateUserRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T00:22:01.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Device.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\Entities\\Device.cs",
+              "RelativeDocumentMoniker": "src\\WebMessages.Models\\Entities\\Device.cs",
+              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\Entities\\Device.cs",
+              "RelativeToolTip": "src\\WebMessages.Models\\Entities\\Device.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T18:04:55.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IMessageService.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Services\\Interfaces\\IMessageService.cs",
+              "RelativeDocumentMoniker": "src\\WebMessages.Services\\Interfaces\\IMessageService.cs",
+              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Services\\Interfaces\\IMessageService.cs",
+              "RelativeToolTip": "src\\WebMessages.Services\\Interfaces\\IMessageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T01:09:38.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.API\\appsettings.json",
               "RelativeDocumentMoniker": "src\\WebMessages.API\\appsettings.json",
@@ -505,7 +537,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.API\\Program.cs",
+              "RelativeDocumentMoniker": "src\\WebMessages.API\\Program.cs",
+              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.API\\Program.cs",
+              "RelativeToolTip": "src\\WebMessages.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T17:50:59.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "OrderHub .cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.API\\Hubs\\OrderHub .cs",
+              "RelativeDocumentMoniker": "src\\WebMessages.API\\Hubs\\OrderHub .cs",
+              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.API\\Hubs\\OrderHub .cs",
+              "RelativeToolTip": "src\\WebMessages.API\\Hubs\\OrderHub .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T20:08:03.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "src\\WebMessages.API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "src\\WebMessages.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-15T20:45:31.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
               "Title": "WebMessages.Services.csproj",
               "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Services\\WebMessages.Services.csproj",
               "RelativeDocumentMoniker": "src\\WebMessages.Services\\WebMessages.Services.csproj",
@@ -517,7 +585,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 34,
               "Title": "WebMessages.Models.csproj",
               "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\WebMessages.Models.csproj",
               "RelativeDocumentMoniker": "src\\WebMessages.Models\\WebMessages.Models.csproj",
@@ -529,7 +597,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 35,
               "Title": "WebMessages.Repositories.csproj",
               "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Repositories\\WebMessages.Repositories.csproj",
               "RelativeDocumentMoniker": "src\\WebMessages.Repositories\\WebMessages.Repositories.csproj",

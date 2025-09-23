@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using WebMessages.Models.DTOs;
 using WebMessages.Models.DTOs.Devices;
 using WebMessages.Models.DTOs.UserDevice;
 using WebMessages.Models.DTOs.Users;
@@ -25,7 +27,9 @@ public class DeviceService : IDeviceService
 
     public async Task RegisterDeviceAsync(UserDeviceRequest userDeviceRequest)
     {
-        User? user = await _userRepository.GetByUsernameAsync(userDeviceRequest.User.Username);
+        QueryInfo queryInfo = new QueryInfo();  
+
+        User? user = await _userRepository.GetByUsernameAsync(userDeviceRequest.User.Username, queryInfo);
 
         if (user == null)
             throw new InvalidOperationException("Invalid Username.");
@@ -63,5 +67,42 @@ public class DeviceService : IDeviceService
         };
 
         await _deviceRepository.AddDeviceAsync(newDevice);
+    }
+
+    public async Task<List<DeviceDTO>> GetDevicesByUserIdAsync(Guid userId)
+    {
+        List<Device> devices = await _deviceRepository.GetAllDevicesByUserIdAsync(userId);
+
+        List<DeviceDTO> devicesDTO = devices
+            .Select(c => new DeviceDTO
+            {
+                Id = c.Id,
+                Name = c.Name,
+                PublicKey = c.PublicKey,
+                LastSeen = c.LastSeen,
+                IsActive = c.IsActive
+            })
+            .ToList();
+
+        return devicesDTO;
+    }
+
+    public async Task<DeviceDTO> GetDeviceByPublicKeyAsync(byte[] publicKey)
+    {
+        Device? device = await _deviceRepository.GetDeviceByPublicKeyAsync(publicKey);
+
+        if (device == null)
+            throw new Exception("Device Not Found.");
+
+        DeviceDTO deviceDTO = new DeviceDTO
+        {
+            Id = device.Id,
+            Name = device.Name,
+            PublicKey = device.PublicKey,
+            LastSeen = device.LastSeen,
+            IsActive = device.IsActive
+        };
+
+        return deviceDTO;
     }
 }

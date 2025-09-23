@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
+builder.Services.AddSingleton<MySidebarService>();
 builder.Services.AddScoped<KeyStorageService>();
 
 builder.Services.AddScoped(sp =>

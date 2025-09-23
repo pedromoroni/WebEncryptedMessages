@@ -21,16 +21,24 @@ public class DeviceRepository : IDeviceRepository
     public async Task<Device?> GetDeviceByPublicKeyAndUserAsync(byte[] publicKey, User user)
     {
         return await _context.Devices
-            .Where(c => c.PublicKey == publicKey)
-            .Where(c => c.UserId == user.Id)
+            .Where(d => d.PublicKey == publicKey && d.UserId == user.Id)
             .FirstOrDefaultAsync();
     }
 
     public async Task<Device?> GetDeviceByPublicKeyAsync(byte[] publicKey)
     {
-        return await _context.Devices.FirstOrDefaultAsync(c => c.PublicKey == publicKey);
+        return await _context.Devices
+            .Where(d => d.PublicKey == publicKey)
+            .FirstOrDefaultAsync();
     }
 
+
+    public async Task<List<Device>> GetAllDevicesByUserIdAsync(Guid userId)
+    {
+        return await _context.Devices
+            .Where(c => c.UserId == userId)
+            .ToListAsync();
+    }
 
     public async Task<int> GetQuantityOfDevicesByUserAsync(User user)
     {

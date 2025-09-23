@@ -1,10 +1,14 @@
 ﻿@page "/"
-@inject HttpClient httpClient
+@using System.Text
+@using WebMessages.WEB.Models.Users
 
 @rendermode InteractiveServer
+
+@inject HttpClient httpClient
 @inject NavigationManager Navigation
 @inject KeyStorageService KeyStorage
 @inject IJSRuntime JSRuntime
+@inject MySidebarService SidebarService
 
 <PageTitle>Login</PageTitle>
 
@@ -123,13 +127,11 @@
                 </div>
             }
 
-            <!-- Username -->
             <div class="mb-4">
                 <label class="form-label fw-semibold">Username</label>
                 <input type="text" @bind=@UserInfo.Username class="form-control" placeholder="Type your username" required>
             </div>
 
-            <!-- Password -->
             <div class="mb-4">
                 <label class="form-label fw-semibold">Password</label>
                 <div class="input-group">
@@ -140,7 +142,6 @@
                 </div>
             </div>
 
-            <!-- Remember me / Forgot password -->
             <div class="remember-forgot">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="rememberMe">
@@ -151,12 +152,10 @@
                 <a href="#">Forgot Password?</a>
             </div>
 
-            <!-- Botão Login -->
             <button type="button" @onclick=@LoginAsync class="btn-login">
                 Login
             </button>
 
-            <!-- Register link -->
             <div class="register-link">
                 Don't have an account?
                 <a href="/register">Register here</a>
@@ -186,47 +185,139 @@
 </script>
 
 @code {
-    private User UserInfo { get; set; } = new User();
-    private bool ShowErrorMessage = false;
+    private UserRequest UserInfo { get; set; } = new();
+    private bool ShowErrorMessage { get; set; }
+
+    protected async override Task OnInitializedAsync()
+    {
+        Helper.LoggedUser = null;
+        Helper.LoggedDevice = null;
+        SidebarService.ShowSidebar = false;
+    }
 
     private async Task LoginAsync()
     {
         try
         {
-            RSAKeyPair keys = await KeyStorage.GetKeysAsync();
-            string deviceName = await JSRuntime.InvokeAsync<string>("deviceInfo.getDeviceName");
+            var device = await CreateDeviceAsync();
+            var user = await AuthenticateUserAsync(device);
 
+            Helper.LoggedUser = user;
+            Helper.LoggedDevice = device;
 
-            Device device = new Device
-            {
-                Name = deviceName,
-                PublicKey = keys.PublicKey
-            };
+            var messagesReceived = user.Devices.SelectMany(d => d.MessagesReceived).ToList();
+            var messagesSent = user.Devices.SelectMany(d => d.MessagesSent).ToList();
 
-            UserDevice userDevice = new UserDevice {
-                User = UserInfo,
-                Device = device
-            };
-
-
-            var json = JsonSerializer.Serialize(userDevice);
-
-            var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
-
-            var response = await httpClient.PostAsync("Users/login", content);
-
-            response.EnsureSuccessStatusCode(); 
-            var responseBody = await response.Content.ReadAsStringAsync();
-            Navigation.NavigateTo("/home"); 
+            await UpdateContacts(messagesReceived, messagesSent);
         }
         catch (TaskCanceledException ex)
         {
-            Console.WriteLine("Request timed out or was canceled: " + ex.Message);
+            Console.WriteLine($"Request timed out or was canceled: {ex.Message}");
             ShowErrorMessage = true;
         }
-        catch (Exception ex)
+        catch (Exception)
         {
             ShowErrorMessage = true;
         }
+    }
+
+    private async Task<Device> CreateDeviceAsync()
+    {
+        var keys = await KeyStorage.GetKeysAsync(UserInfo.Username);
+        var deviceName = await JSRuntime.InvokeAsync<string>("deviceInfo.getDeviceName");
+
+        return new Device
+        {
+            Name = deviceName,
+            PublicKey = keys.PublicKey
+        };
+    }
+
+    private async Task<User?> AuthenticateUserAsync(Device device)
+    {
+        var userDevice = new UserDevice
+        {
+            User = UserInfo,
+            Device = device
+        };
+
+        var queryInfo = new QueryInfo
+        {
+            PageNumber = 1,
+            PageSize = 1
+        };
+
+        var json = JsonSerializer.Serialize(userDevice);
+        using var content = new StringContent(json, Encoding.UTF8, "application/json");
+        var response = await httpClient.PostAsync(
+            $"Users/login?pageSize={queryInfo.PageSize}&pageNumber={queryInfo.PageNumber}",
+            content);
+
+        response.EnsureSuccessStatusCode();
+        var responseBody = await response.Content.ReadAsStringAsync();
+
+        var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+        return JsonSerializer.Deserialize<User>(responseBody, options);
+    }
+
+    private async Task UpdateContacts(List<Message> messagesReceived, List<Message> messagesSent)
+    {
+        try
+        {
+            foreach (var message in messagesReceived)
+            {
+                await ProcessMessageAsync(message, decrypt: true);
+            }
+
+            foreach (var message in messagesSent)
+            {
+                await ProcessMessageAsync(message, decrypt: true);
+            }
+
+            SidebarService.ShowSidebar = true;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+
+        Navigation.NavigateTo("/home");
+    }
+
+    private async Task ProcessMessageAsync(Message message, bool decrypt)
+    {
+        var user = await GetUserByDeviceIdAsync(message.FromDeviceId);
+
+        if (decrypt)
+        {
+            var keyPair = await KeyStorage.GetKeysAsync(Helper.LoggedUser.Username);
+            message.Decrypted = E2E.Decrypt(message, keyPair.PrivateKey);
+        }
+
+        var contact = SidebarService.Contacts.FirstOrDefault(c => c.User.Id == user.Id);
+        if (contact != null)
+        {
+            contact.Messages.Add(message);
+        }
+        else
+        {
+            SidebarService.Contacts.Add(new MySidebarItem
+            {
+                User = user,
+                Messages = new List<Message> { message }
+            });
+        }
+    }
+
+    private async Task<User> GetUserByDeviceIdAsync(Guid deviceId)
+    {
+        var url = $"Users/getUserByDeviceId?deviceId={deviceId}";
+        var response = await httpClient.GetAsync(url) ?? throw new Exception("Erro a receber a resposta");
+
+        response.EnsureSuccessStatusCode();
+        var responseBody = await response.Content.ReadAsStringAsync();
+
+        var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+        return JsonSerializer.Deserialize<User>(responseBody, options);
     }
 }

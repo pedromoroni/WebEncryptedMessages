@@ -23,22 +23,22 @@ public class AppDbContext : DbContext
             .HasIndex(u => u.Username)
             .IsUnique();
 
-        // Relação Message -> User (FromUser)
+        // Relação Message -> Device (FromDevice)
         modelBuilder.Entity<Message>()
-            .HasOne(m => m.FromUser)
+            .HasOne(m => m.FromDevice)
             .WithMany(u => u.MessagesSent)
-            .HasForeignKey(m => m.FromUserId)
+            .HasForeignKey(m => m.FromDeviceId)
             .OnDelete(DeleteBehavior.Restrict); // evita cascade delete
 
-        // Relação Message -> User (ToUser)
+        // Relação Message -> Device (ToDevice)
         modelBuilder.Entity<Message>()
-            .HasOne(m => m.ToUser)
+            .HasOne(m => m.ToDevice)
             .WithMany(u => u.MessagesReceived)
-            .HasForeignKey(m => m.ToUserId)
+            .HasForeignKey(m => m.ToDeviceId)
             .OnDelete(DeleteBehavior.Restrict);
 
         // Relação Device -> User
-        modelBuilder.Entity<Device>()
+       modelBuilder.Entity<Device>()
             .HasOne(d => d.User)
             .WithMany(u => u.Devices)
             .HasForeignKey(d => d.UserId)

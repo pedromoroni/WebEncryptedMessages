@@ -88,9 +88,12 @@ C:\Users\pedro\Documents\WebMessages\WebMessages.WEB\bin\Debug\net9.0\Microsoft.
 C:\Users\pedro\Documents\WebMessages\WebMessages.WEB\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
 C:\Users\pedro\Documents\WebMessages\WebMessages.WEB\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
 C:\Users\pedro\Documents\WebMessages\WebMessages.WEB\bin\Debug\net9.0\System.Net.ServerSentEvents.dll
-C:\Users\pedro\Documents\WebMessages\WebMessages.WEB\bin\Debug\net9.0\System.Threading.Channels.dll
 C:\Users\pedro\Documents\WebMessages\WebMessages.WEB\obj\Debug\net9.0\WebMessages.WEB.csproj.AssemblyReference.cache
 C:\Users\pedro\Documents\WebMessages\WebMessages.WEB\obj\Debug\net9.0\WebMessa.CDD3ED2C.Up2Date
 C:\Users\pedro\Documents\WebMessages\WebMessages.WEB\bin\Debug\net9.0\TG.Blazor.IndexedDB.dll
 C:\Users\pedro\Documents\WebMessages\WebMessages.WEB\obj\Debug\net9.0\compressed\r7xoxieuxb-orfckjom8x.gz
 C:\Users\pedro\Documents\WebMessages\WebMessages.WEB\obj\Debug\net9.0\compressed\439l33mw9o-uambcu74kw.gz
+C:\Users\pedro\Documents\WebMessages\WebMessages.WEB\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\pedro\Documents\WebMessages\WebMessages.WEB\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\pedro\Documents\WebMessages\WebMessages.WEB\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\pedro\Documents\WebMessages\WebMessages.WEB\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json

@@ -1,8 +1,11 @@
 ﻿@page "/register"
+@using WebMessages.WEB.Models.Users
+
+@rendermode InteractiveServer
 
 @inject NavigationManager Navigation
 @inject HttpClient httpClient
-@rendermode InteractiveServer
+@inject MySidebarService SidebarService
 
 <PageTitle>Register</PageTitle>
 
@@ -10,6 +13,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
+    body {
+        background-color: #ffdbe2;
+    }
+
     .container-register {
         width: 100%;
         min-height: 100vh;
@@ -174,11 +181,18 @@
 </script>
 
 @code {
-    private User UserInfo { get; set; } = new User();
+    private UserRequest UserInfo { get; set; } = new UserRequest();
     private string ConfirmPassword { get; set; } = string.Empty; 
 
     private bool ShowErrorMessage = false;
     private string ErrorMessageContent = string.Empty;
+
+    protected async override Task OnInitializedAsync()
+    {
+        Helper.LoggedUser = null;
+        Helper.LoggedDevice = null;
+        SidebarService.ShowSidebar = false;
+    }
 
     private async Task RegisterAsync()
     {
@@ -198,6 +212,7 @@
             };
 
             var json = JsonSerializer.Serialize(createUserRequest);
+
             var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
 
             var response = await httpClient.PostAsync("Users/create", content);

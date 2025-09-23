@@ -13,41 +13,58 @@ public class KeyStorageService
         _jsRuntime = jsRuntime;
     }
 
-    public async Task SaveKeyAsync(string keyName, string value)
+    public async Task SaveKeyAsync(string username, string keyName, byte[] value)
     {
-        await _jsRuntime.InvokeVoidAsync("idb.setItem", "Keys", keyName, value);
+        string storageKey = $"{username}_{keyName}";
+        string base64Value = Convert.ToBase64String(value);
+        await _jsRuntime.InvokeVoidAsync("idb.setItem", "Keys", storageKey, base64Value);
     }
 
-    public async Task<string> GetKeyAsync(string keyName)
+
+    private async Task<byte[]> GetKeyAsync(string username, string keyName)
     {
-        return await _jsRuntime.InvokeAsync<string>("idb.getItem", "Keys", keyName);
+        string storageKey = $"{username}_{keyName}";
+        string base64Key = await _jsRuntime.InvokeAsync<string>("idb.getItem", "Keys", storageKey);
+
+        if (string.IsNullOrEmpty(base64Key))
+            return Array.Empty<byte>();
+
+        return Convert.FromBase64String(base64Key);
     }
 
-    public RSAKeyPair GenerateRSAKeys()
+
+
+    public static ECDHKeyPair GenerateECDHKeys()
     {
-        using (var rsa = RSA.Create(2048))
+        using var ecdh = ECDiffieHellman.Create(ECCurve.NamedCurves.nistP256);
+
+        return new ECDHKeyPair
         {
-            return new RSAKeyPair
-            {
-                PublicKey = Convert.ToBase64String(rsa.ExportSubjectPublicKeyInfo()),
-                PrivateKey = Convert.ToBase64String(rsa.ExportPkcs8PrivateKey())
-            };
-        }
+            // Exporta a chave pública em formato padrão (SubjectPublicKeyInfo)
+            PublicKey = ecdh.PublicKey.ExportSubjectPublicKeyInfo(),
+            // Exporta a chave privada em formato PKCS#8
+            PrivateKey = ecdh.ExportPkcs8PrivateKey()
+        };
     }
 
-    public async Task<RSAKeyPair> GetKeysAsync()
-    {
-        var privateKey = await GetKeyAsync("PrivateKey");
-        var publicKey = await GetKeyAsync("PublicKey");
 
-        if (string.IsNullOrEmpty(privateKey) || string.IsNullOrEmpty(publicKey))
+    public async Task<ECDHKeyPair> GetKeysAsync(string username)
+    {
+        var privateKey = await GetKeyAsync(username, "PrivateKey");
+        var publicKey = await GetKeyAsync(username, "PublicKey");
+
+        if (privateKey.Length == 0 || publicKey.Length == 0)
         {
-            var keys = GenerateRSAKeys();
-            await SaveKeyAsync("PrivateKey", keys.PrivateKey);
-            await SaveKeyAsync("PublicKey", keys.PublicKey);
+            var keys = GenerateECDHKeys();
+            await SaveKeyAsync(username, "PrivateKey", keys.PrivateKey);
+            await SaveKeyAsync(username, "PublicKey", keys.PublicKey);
             return keys;
         }
 
-        return new RSAKeyPair { PrivateKey = privateKey, PublicKey = publicKey };
+        return new ECDHKeyPair
+        {
+            PrivateKey = privateKey,
+            PublicKey = publicKey
+        };
     }
 }
