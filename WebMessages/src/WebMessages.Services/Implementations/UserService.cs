@@ -40,11 +40,13 @@ public class UserService : IUserService
             Devices = user.Devices
                   .Select(d => new DeviceDTO
                   {
+                      Id = d.Id,
                       Name = d.Name,
                       PublicKey = d.PublicKey,
                       LastSeen = d.LastSeen,
                       IsActive = d.IsActive,
-                      MessagesSent = d.MessagesSent.Select(m => new MessageDTO
+                      MessagesSent = d.MessagesSent
+                      .Select(m => new MessageDTO
                       {
                           FromDeviceId = m.FromDeviceId,
                           ToDeviceId = m.ToDeviceId,
@@ -55,8 +57,10 @@ public class UserService : IUserService
                           CreatedAt = m.CreatedAt,
                           DeliveredAt = m.DeliveredAt,
                           ReadAt = m.ReadAt
-                      }).ToList(),
-                      MessagesReceived = d.MessagesReceived.Select(m => new MessageDTO
+                      })
+                      .ToList(),
+                      MessagesReceived = d.MessagesReceived
+                      .Select(m => new MessageDTO
                       {
                           FromDeviceId = m.FromDeviceId,
                           ToDeviceId = m.ToDeviceId,

@@ -1,4 +1,6 @@
-﻿namespace WebMessages.WEB.Models;
+﻿using WebMessages.WEB.Models.Messages;
+
+namespace WebMessages.WEB.Models;
 
 public class Device
 {

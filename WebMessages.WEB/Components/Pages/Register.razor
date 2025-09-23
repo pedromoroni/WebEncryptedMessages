@@ -181,17 +181,18 @@
 </script>
 
 @code {
-    private UserRequest UserInfo { get; set; } = new UserRequest();
+    private UserCredentialsRequest UserInfo { get; set; } = new UserCredentialsRequest();
     private string ConfirmPassword { get; set; } = string.Empty; 
 
     private bool ShowErrorMessage = false;
     private string ErrorMessageContent = string.Empty;
 
-    protected async override Task OnInitializedAsync()
+    protected override void OnInitialized()
     {
         Helper.LoggedUser = null;
         Helper.LoggedDevice = null;
         SidebarService.ShowSidebar = false;
+        SidebarService.Contacts.Clear();
     }
 
     private async Task RegisterAsync()

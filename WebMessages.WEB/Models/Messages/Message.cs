@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace WebMessages.WEB.Models;
+namespace WebMessages.WEB.Models.Messages;
 
 public class Message
 {
@@ -8,8 +8,8 @@ public class Message
     public Guid ToDeviceId { get; set; }
 
     public string CipherText { get; set; }      // mensagem cifrada
-    public string Nonce { get; set; }           // nonce único por mensagem
-    public string EphemeralPub { get; set; }    // chave pública efêmera do remetente
+    public string Nonce { get; set; }           // nonce unico por mensagem
+    public string EphemeralPub { get; set; }    // chave publica efemera do remetente
     public MessageStatus Status { get; set; }
     public DateTimeOffset CreatedAt { get; set; }
     public DateTimeOffset? DeliveredAt { get; set; }

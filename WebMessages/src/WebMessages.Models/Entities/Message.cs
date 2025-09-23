@@ -13,6 +13,7 @@ public class Message
     [Required]
     public Guid ToDeviceId { get; set; }
 
+    public bool Received { get; set; } // vai servir para saber se deve ser enviada na lista de mensagens recebidas do destinatario ou nas mensagens enviadas do rememtente
     public byte[] CipherText { get; set; } // mensagem cifrada
     public byte[] Nonce { get; set; } // nonce unico por mensagem
     public byte[] EphemeralPub { get; set; } // chave public efemera do remetente

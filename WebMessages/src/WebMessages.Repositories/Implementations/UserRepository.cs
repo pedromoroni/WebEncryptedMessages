@@ -50,12 +50,26 @@ public class UserRepository : IUserRepository
 
         foreach (var device in devices)
         {
-            device.MessagesSent = await _context.Messages
-                .Where(m => m.FromDeviceId == device.Id)
-                .OrderByDescending(m => m.CreatedAt)
-                .Skip(skip)
-                .Take(queryInfo.PageSize)
+            var messagesSent = new List<Message>();
+
+            var recipientIds = await _context.Messages
+                .Where(m => m.FromDeviceId == device.Id && !m.Received)
+                .Select(m => m.ToDeviceId)
+                .Distinct()
                 .ToListAsync();
+
+            foreach (var recipientId in recipientIds)
+            {
+                var msgs = await _context.Messages
+                    .Where(m => m.FromDeviceId == device.Id && m.ToDeviceId == recipientId && !m.Received)
+                    .OrderByDescending(m => m.CreatedAt)
+                    .Take(queryInfo.PageSize)
+                    .ToListAsync();
+
+                messagesSent.AddRange(msgs);
+            }
+
+            device.MessagesSent = messagesSent;
 
             var messagesReceived = new List<Message>();
 
@@ -68,6 +82,7 @@ public class UserRepository : IUserRepository
             foreach (var senderId in senderIds)
             {
                 var msgs = await _context.Messages
+                    .Where(c => c.Received)
                     .Where(m => m.ToDeviceId == device.Id && m.FromDeviceId == senderId)
                     .OrderByDescending(m => m.CreatedAt)
                     .Take(queryInfo.PageSize)

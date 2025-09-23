@@ -1,15 +1,15 @@
 [
   {
     "ContainingType": "WebMessages.API.Controllers.DevicesController",
-    "Method": "SearchUsers",
-    "RelativePath": "api/Devices/getPublicKeysDevicesByUserId",
+    "Method": "GetDeviceByPublicKey",
+    "RelativePath": "api/Devices/getDeviceByPublicKey",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userId",
-        "Type": "System.String",
+        "Name": "publicKey",
+        "Type": "System.Byte[]",
         "IsRequired": false
       }
     ],
@@ -34,7 +34,44 @@
         "StatusCode": 500
       }
     ],
-    "Summary": "Get Public Keys Of Devices by UserId"
+    "Summary": "Get Devices by Public Key"
+  },
+  {
+    "ContainingType": "WebMessages.API.Controllers.DevicesController",
+    "Method": "GetDeviceByUserId",
+    "RelativePath": "api/Devices/getDevicesByUserId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ],
+    "Summary": "Get Devices by UserId"
   },
   {
     "ContainingType": "WebMessages.API.Controllers.MessagesController",
@@ -46,7 +83,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "System.Collections.Generic.List\u00601[[WebMessages.Models.DTOs.Messages.MessageRequest, WebMessages.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "WebMessages.Models.Messages.SendMessagesRequest",
         "IsRequired": true
       }
     ],

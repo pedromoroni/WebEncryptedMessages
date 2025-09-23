@@ -9,5 +9,5 @@ namespace WebMessages.Repositories.Interfaces;
 
 public interface IMessageRepository
 {
-    Task AddMessageAsync(Message message);
+    Task AddListMessageAsync(List<Message> message);
 }

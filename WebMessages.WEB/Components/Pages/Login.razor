@@ -1,5 +1,6 @@
 ﻿@page "/"
 @using System.Text
+@using System.Linq
 @using WebMessages.WEB.Models.Users
 
 @rendermode InteractiveServer
@@ -185,14 +186,15 @@
 </script>
 
 @code {
-    private UserRequest UserInfo { get; set; } = new();
+    private UserCredentialsRequest UserInfo { get; set; } = new();
     private bool ShowErrorMessage { get; set; }
 
-    protected async override Task OnInitializedAsync()
+    protected override void OnInitialized()
     {
         Helper.LoggedUser = null;
         Helper.LoggedDevice = null;
         SidebarService.ShowSidebar = false;
+        SidebarService.Contacts.Clear();
     }
 
     private async Task LoginAsync()
@@ -202,8 +204,14 @@
             var device = await CreateDeviceAsync();
             var user = await AuthenticateUserAsync(device);
 
+            if (user == null)
+                throw new Exception("Error authentication the User.");
+
             Helper.LoggedUser = user;
-            Helper.LoggedDevice = device;
+            Helper.LoggedUserCredentials = UserInfo;
+
+            Helper.LoggedDevice = user.Devices
+                .FirstOrDefault(c => c.PublicKey.SequenceEqual(device.PublicKey));
 
             var messagesReceived = user.Devices.SelectMany(d => d.MessagesReceived).ToList();
             var messagesSent = user.Devices.SelectMany(d => d.MessagesSent).ToList();
@@ -286,7 +294,7 @@
 
     private async Task ProcessMessageAsync(Message message, bool decrypt)
     {
-        var user = await GetUserByDeviceIdAsync(message.FromDeviceId);
+        var user = await GetUserByDeviceIdAsync(message.ToDeviceId);
 
         if (decrypt)
         {

@@ -9,6 +9,7 @@ namespace WebMessages.WEB.Helpers;
 public static class Helper
 {
     public static User? LoggedUser { get; set; } = new User();
+    public static UserCredentialsRequest LoggedUserCredentials { get; set; } = new UserCredentialsRequest();
     public static Device? LoggedDevice { get; set; } = new Device();
     public static KeyStorageService KeyStorageService { get; set; }
 }

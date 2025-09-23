@@ -4,6 +4,6 @@ namespace WebMessages.WEB.Models;
 
 public class CreateUserRequest
 {
-    public UserRequest Credentials { get; set; } = new();
+    public UserCredentialsRequest Credentials { get; set; } = new();
     public string ConfirmPassword { get; set; } = string.Empty;
 }

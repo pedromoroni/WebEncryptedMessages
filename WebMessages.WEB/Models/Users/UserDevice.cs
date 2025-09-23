@@ -2,6 +2,6 @@
 
 public class UserDevice
 {
-    public UserRequest User { get; set; }
+    public UserCredentialsRequest User { get; set; }
     public Device Device { get; set; } 
 }

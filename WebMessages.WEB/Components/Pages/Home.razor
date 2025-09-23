@@ -25,19 +25,19 @@
 </select>
 
 <br />
-<input type="text" @bind="Message" placeholder="Type your message..." />
+<input type="text" @bind="MessageContent" placeholder="Type your message..." />
 <button @onclick="SendMessage">Send Message</button>
 
 @code {
     private Guid ToUserId { get; set; }
     private string Username { get; set; } = string.Empty;
-    private string Message { get; set; } = string.Empty;
+    private string MessageContent { get; set; } = string.Empty;
 
     private List<User> Users { get; set; } = new List<User>();
 
     private CancellationTokenSource? _cts;
 
-    protected async override Task OnInitializedAsync()
+    protected override void OnInitialized()
     {
         if (Helper.LoggedUser == null)
         {
@@ -88,46 +88,53 @@
 
     private async Task SendMessage()
     {
-        if (string.IsNullOrEmpty(Message))
+        if (string.IsNullOrEmpty(MessageContent))
         {
             Console.WriteLine("Invalid Message.");
             return;
         }
 
+        if (Helper.LoggedDevice == null)
+        {
+            Console.WriteLine("Invalid Logged User.");
+            Navigation.NavigateTo("/");
+            return;
+        }
+
         try
         {
-            var url = $"Devices/getDevicesByUserId?userId={ToUserId}";
-            var response = await httpClient.GetAsync(url);
-            response.EnsureSuccessStatusCode();
+            Console.WriteLine($"{Helper.LoggedDevice.Id}\n\n\n");
+            List<Device> toUserdevices = await GetDevicesAsync(ToUserId);
+            if (toUserdevices == null || toUserdevices.Count == 0)
+                throw new Exception("Recipient User Devices Not Found.");
 
-            var devices = await response.Content.ReadFromJsonAsync<List<Device>>();
-            if (devices == null || devices.Count == 0)
-                throw new Exception("Device Not Found.");
 
-            ECDHKeyPair senderKeys = await KeyStorage.GetKeysAsync(Helper.LoggedUser.Username); 
-            List<Message> encryptedMessages = new List<Message>();
+            var localUserDevices = await GetDevicesAsync(Helper.LoggedUser.Id);
+            if (localUserDevices == null || localUserDevices.Count == 0)
+                throw new Exception("Local User Devices Not Found.");
 
-            foreach (Device device in devices)
+
+            List<Message> toUserEncryptedMessages = EncryptRecipientMessages(toUserdevices);
+            List<Message> localUserEncryptedMessages = EncryptSenderMessages(localUserDevices, toUserdevices[0].Id); // encriptar para cada device do user local utilizando o id do primeiro device do destinatario
+
+            SendMessagesRequest sendMessagesRequest = new SendMessagesRequest
             {
-                byte[] recipientPubKey = device.PublicKey;
+                UserCredentials = Helper.LoggedUserCredentials,
+                SentMessages = localUserEncryptedMessages,
+                ReceivedMessages = toUserEncryptedMessages
+            };
 
-                var msg = E2E.Encrypt(
-                    Message,
-                    fromDeviceId: Helper.LoggedDevice.Id, // ID do dispositivo local
-                    toDeviceId: device.Id,   // ID do dispositivo remoto
-                    recipientPublicKey: recipientPubKey
-                );
-
-                encryptedMessages.Add(msg);
-            }
-
-            if (encryptedMessages.Count > 0)
+            if (toUserEncryptedMessages.Count > 0 && toUserEncryptedMessages.Count == localUserEncryptedMessages.Count)
             {
-                var json = JsonSerializer.Serialize(encryptedMessages);
+                var json = JsonSerializer.Serialize(sendMessagesRequest);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
                 var sendResponse = await httpClient.PostAsync("Messages/send", content);
                 sendResponse.EnsureSuccessStatusCode();
+
+                // por mensagem de sucesso
+                return;
             }
+            // por mensagem de erro
         }
         catch (Exception ex)
         {
@@ -135,9 +142,56 @@
         }
     }
 
-    // TO DO:
-    // ao enviar uma mensagem para o utilizador também é preciso enviar essa mesma mensagem para si mesmo para ser possivel desencriptar
-    // entao iremos guardar na messages sent so a nossa versao e nas mensagens received de quem recebeu sera armazenada a mensagem
+    public async Task<List<Device>> GetDevicesAsync(Guid userId)
+    {
+        var url = $"Devices/getDevicesByUserId?userId={userId}";
+        var response = await httpClient.GetAsync(url);
+        response.EnsureSuccessStatusCode();
+
+        return await response.Content.ReadFromJsonAsync<List<Device>>() ?? new List<Device>();
+    } 
+
+    public List<Message> EncryptRecipientMessages(List<Device> devices) // encripta todas as mensagens que o destinario recebe
+    {
+        List<Message> encryptedMessages = new List<Message>();
+
+        foreach (Device device in devices) // encriptar com as public keys de todos os dispositivos
+        {
+            byte[] recipientPubKey = device.PublicKey;
+
+            var msg = E2E.Encrypt(
+                MessageContent,
+                fromDeviceId: Helper.LoggedDevice.Id, // ID do dispositivo local
+                toDeviceId: device.Id,   // ID do dispositivo remoto
+                recipientPublicKey: recipientPubKey
+            );
+
+            encryptedMessages.Add(msg);
+        }
+
+        return encryptedMessages;
+    }
+
+    public List<Message> EncryptSenderMessages(List<Device> devices, Guid toDeviceId) // encripta todas as mensagens que o remetente envia
+    {
+        List<Message> encryptedMessages = new List<Message>();
+
+        foreach (Device device in devices) // encriptar com as public keys de todos os dispositivos
+        {
+            byte[] recipientPubKey = device.PublicKey;
+
+            var msg = E2E.Encrypt(
+                MessageContent,
+                fromDeviceId: device.Id, // ID do dispositivo local
+                toDeviceId: toDeviceId,   // ID do dispositivo remoto
+                recipientPublicKey: recipientPubKey
+            );
+
+            encryptedMessages.Add(msg);
+        }
+
+        return encryptedMessages;
+    }
 }
 
                 

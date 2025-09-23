@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebMessages.Data;
+using WebMessages.Models.DTOs;
 using WebMessages.Models.DTOs.Messages;
 using WebMessages.Models.DTOs.Users;
+using WebMessages.Models.Entities;
+using WebMessages.Models.Messages;
 using WebMessages.Services.Interfaces;
 
 namespace WebMessages.API.Controllers;
@@ -23,11 +26,20 @@ public class MessagesController : ControllerBase
     [EndpointSummary("Send message to user")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-    public async Task<IActionResult> SendMessages([FromBody] List<MessageRequest> request)
+    public async Task<IActionResult> SendMessages([FromBody] SendMessagesRequest request)
     {
         try
         {
-            await _messageService.SendMessages(request);
+            QueryInfo queryInfo = new QueryInfo // ver se pode ser 0 ou se explode
+            {
+                PageNumber = 1,
+                PageSize = 1
+            };
+
+            //  verificar se o user é valido e as credenciais estao corretas 
+            UserDto user = await _userService.GetUserAsync(request.UserCredentials, queryInfo);
+
+            await _messageService.SendMessages(request, user);
             return Ok();
         }
         catch (Exception)
