@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebMessages.WEB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ba0721f38c9454067c8d5472f9f777e3804cd02")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b279809f8b5d1163321e8cd49b7609b55122bede")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebMessages.WEB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebMessages.WEB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

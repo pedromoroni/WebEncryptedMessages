@@ -5,32 +5,86 @@
 
 @rendermode InteractiveServer
 
+@inject MySidebarService SidebarService
 @inject NavigationManager Navigation
 @inject HttpClient httpClient
 @inject KeyStorageService KeyStorage
 
-<h3>Send Encrypted Message</h3>
+<div class="d-flex vh-100">
+    <WebMessages.WEB.Modals.MySidebar></WebMessages.WEB.Modals.MySidebar>
 
-<input type="text"
-       value="@Username"
-       @oninput="OnInputChanged"
-       placeholder="Search User..." />
+    <div class="flex-grow-1 d-flex flex-column">
+        @if (SidebarService.SelectedContact != null && Helper.LoggedDevice != null)
+        {
+            <!-- Área de chat -->
+            <div class="d-flex flex-column flex-grow-1 bg-light">
+                <div id="webmessages-body-container"
+                     class="flex-grow-1 p-4 overflow-auto d-flex flex-column gap-2"
+                     style="max-height: calc(100% - 90px);">
 
-<select @bind="ToUserId" style="min-width: 200px;">
-    <option value="">Select User</option>
-    @foreach (User user in Users)
-    {
-        <option value="@user.Id">@user.Username</option>
+                    @foreach (var message in SidebarService.SelectedContact.Messages)
+                    {
+                        <div class="d-flex @(message.FromDeviceId == Helper.LoggedDevice.Id ? "justify-content-end" : "justify-content-start")">
+                            <div class="p-2 px-3 rounded-3 shadow-sm"
+                                 style="max-width: 70%; background-color:@(message.FromDeviceId == Helper.LoggedDevice.Id ? "#667eea" : "#f1f1f1"); color:@(message.FromDeviceId == Helper.LoggedDevice.Id ? "white" : "black");">
+                                @message.Decrypted
+                            </div>
+                        </div>
+                    }
+                </div>
+
+                <!-- Input de mensagem -->
+                <div id="webmessages-input-container"
+                     class="p-3 border-top bg-white d-flex align-items-center gap-2">
+                    <input id="webmessages-message-input"
+                           @bind=@MessageContent
+                           type="text"
+                           placeholder="✍️ Escreva a sua mensagem..."
+                           class="form-control border-0 shadow-none bg-light rounded-pill px-3" />
+
+                    <button id="webmessages-submit-message"
+                            @onclick=@SendMessage
+                            class="btn btn-primary rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 44px; height: 44px;">
+                        <span class="material-symbols-outlined">send</span>
+                    </button>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="d-flex flex-grow-1 align-items-center justify-content-center text-muted">
+                <p>👈 Seleciona um contacto para começar a conversar</p>
+            </div>
+        }
+    </div>
+</div>
+
+<style>
+    #webmessages-body-container::-webkit-scrollbar {
+        width: 6px;
     }
-</select>
 
-<br />
-<input type="text" @bind="MessageContent" placeholder="Type your message..." />
-<button @onclick="SendMessage">Send Message</button>
+    #webmessages-body-container::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+
+    #webmessages-body-container::-webkit-scrollbar-track {
+        background: transparent;
+    }
+</style>
+
+<script>
+    function ScrollBodyToBottom() {
+        const webmessagesBody = document.getElementById('webmessages-body-container');
+        if (webmessagesBody) {
+            webmessagesBody.scrollTop = webmessagesBody.scrollHeight;
+        }
+    }
+</script>
 
 @code {
-    private Guid ToUserId { get; set; }
-    private string Username { get; set; } = string.Empty;
     private string MessageContent { get; set; } = string.Empty;
 
     private List<User> Users { get; set; } = new List<User>();
@@ -39,52 +93,23 @@
 
     protected override void OnInitialized()
     {
+        SidebarService.OnChange += UpdateStateSafely;
         if (Helper.LoggedUser == null)
         {
             Navigation.NavigateTo("/");
         }
     }
 
-    private async Task OnInputChanged(ChangeEventArgs e)
+    private Task UpdateStateSafely()
     {
-        Username = e.Value?.ToString() ?? string.Empty;
-        await SearchUsersAsync();
+        return InvokeAsync(StateHasChanged);
     }
 
-    private async Task SearchUsersAsync()
+    public void Dispose()
     {
-        _cts?.Cancel();
-        _cts = new CancellationTokenSource();
-        var token = _cts.Token;
-
-        if (string.IsNullOrWhiteSpace(Username))
-        {
-            Users.Clear();
-            return;
-        }
-
-        try
-        {
-            await Task.Delay(300, token);
-
-            var url = $"Users/search?username={Uri.EscapeDataString(Username)}";
-            var response = await httpClient.GetAsync(url, token);
-            response.EnsureSuccessStatusCode();
-
-            if (!token.IsCancellationRequested && response is not null)
-            {
-                var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
-                var users = await response.Content.ReadFromJsonAsync<List<User>>(options);
-                Users = users ?? new List<User>();
-                StateHasChanged();
-            }
-        }
-        catch (TaskCanceledException) { }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Error: {ex.Message}");
-        }
+        SidebarService.OnChange -= UpdateStateSafely;
     }
+
 
     private async Task SendMessage()
     {
@@ -101,10 +126,14 @@
             return;
         }
 
+        if (SidebarService.SelectedContact == null)
+        {
+            return;
+        }
+
         try
         {
-            Console.WriteLine($"{Helper.LoggedDevice.Id}\n\n\n");
-            List<Device> toUserdevices = await GetDevicesAsync(ToUserId);
+            List<Device> toUserdevices = await GetDevicesAsync(SidebarService.SelectedContact.User.Id);
             if (toUserdevices == null || toUserdevices.Count == 0)
                 throw new Exception("Recipient User Devices Not Found.");
 
@@ -182,8 +211,8 @@
 
             var msg = E2E.Encrypt(
                 MessageContent,
-                fromDeviceId: device.Id, // ID do dispositivo local
-                toDeviceId: toDeviceId,   // ID do dispositivo remoto
+                fromDeviceId: device.Id, 
+                toDeviceId: toDeviceId,   
                 recipientPublicKey: recipientPubKey
             );
 

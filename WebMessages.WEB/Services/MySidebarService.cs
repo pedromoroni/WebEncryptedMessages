@@ -6,6 +6,7 @@ public class MySidebarService
 {
     private bool _showSidebar = false;
     private List<MySidebarItem> _contacts = new();
+    private MySidebarItem? _selectedContact = null;
 
     public List<MySidebarItem> Contacts
     {
@@ -26,14 +27,23 @@ public class MySidebarService
             NotifyStateChanged();
         }
     }
+    public MySidebarItem? SelectedContact
+    {
+        get => _selectedContact;
+        set
+        {
+            _selectedContact = value;
+            NotifyStateChanged();
+        }
+    }
 
     public event Func<Task>? OnChange;
 
-    private void NotifyStateChanged()
+    public async Task NotifyStateChanged()
     {
         if (OnChange != null)
         {
-            _ = OnChange.Invoke(); // chama sem esperar, pois é evento
+            await OnChange.Invoke();
         }
     }
 }

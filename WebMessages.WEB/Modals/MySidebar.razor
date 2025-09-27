@@ -1,7 +1,6 @@
 ﻿@using WebMessages.WEB.Services
 @using WebMessages.WEB.Models
 
-@inject MySidebarService MySidebarService
 @inject KeyStorageService KeyStorageService
 
 @implements IDisposable
@@ -20,7 +19,10 @@
         <div class="p-3 border-bottom">
             <div class="input-group">
                 <span class="input-group-text bg-white border-end-0">🔍</span>
-                <input type="text" class="form-control border-start-0" placeholder="Search User">
+                <input type="text" class="form-control border-start-0"
+                       value=@UsernameSearch
+                       oninput=@OnInputChanged 
+                       placeholder="Search User">
             </div>
         </div>
 
@@ -29,14 +31,14 @@
             {
                 @foreach (var contact in MySidebarService.Contacts)
                 {
-                    <li class="d-flex align-items-center p-2 rounded-3 mb-1 hover-bg cursor-pointer">
+                    <li class="d-flex align-items-center p-2 rounded-3 mb-1 hover-bg cursor-pointer" onclick=@(() => OnContactClick(contact))>
                         <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center me-2" style="width: 48px; height: 48px; font-weight: 600;">
-                            @contact.User.Username.Substring(0, 1).ToUpper()
+                            @(contact.User != null ? contact.User.Username.Substring(0, 1).ToUpper() : "")
                         </div>
                         <div class="flex-grow-1">
                             <div class="d-flex justify-content-between">
-                                <span class="fw-bold text-dark">@contact.Messages[0].Decrypted</span>
-                                <small class="text-muted">@contact.User.Username</small>
+                                <span class="fw-bold text-dark">@(contact.Messages.Count > 0 ? contact.Messages[0].Decrypted : "")</span>
+                                <small class="text-muted">@(contact.User != null ? contact.User.Username : "")</small>
                             </div>
                             <div>
                                 <small class="text-muted">9:00 AM</small>
@@ -50,7 +52,6 @@
                 <li class="text-center text-muted p-3">Nenhum contato encontrado.</li>
             }
         </ul>
-
         <div class="p-3 border-top text-center text-muted small bg-light">
             🔒 End-to-end encrypted messages
         </div>
@@ -72,34 +73,9 @@
 @code {
     private List<MySidebarItem> DecryptedContacts = new ();
 
-    protected override async void OnInitialized()
+    protected override void OnInitialized()
     {
         MySidebarService.OnChange += UpdateStateSafely;
-        /*
-         * 
-        @if (MySidebarService.Contacts != null && MySidebarService.Contacts.Any())
-        {
-            @foreach (var contact in MySidebarService.Contacts)
-            {
-                DecryptedContacts.Add(new MySidebarItem
-                {
-                    User = contact.User,
-
-                });
-            }
-        }
-        if (MySidebarService.Contacts != null)
-        {
-            var privateKey = await Helpers.Information.GetLoggedUserPrivateKey();
-
-            DecryptedContacts = MySidebarService.Contacts
-                .Where(c => c.Messages.Any())
-                .ToDictionary(
-                    c => c.User.Username,
-                    c => Helpers.E2E.Decrypt(c.Messages.Last(), privateKey)
-                );
-        }
-        */
     }
 
     private Task UpdateStateSafely()
