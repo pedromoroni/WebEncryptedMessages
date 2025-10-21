@@ -11,12 +11,12 @@
       "RelativeMoniker": "D:0:0:{1E167DED-607D-4FA5-AABE-22E6C9E0D985}|WebMessages.WEB.csproj|solutionrelative:modals\\mysidebar.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1E167DED-607D-4FA5-AABE-22E6C9E0D985}|WebMessages.WEB.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages.web\\models\\mysidebaritem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E167DED-607D-4FA5-AABE-22E6C9E0D985}|WebMessages.WEB.csproj|solutionrelative:models\\mysidebaritem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1E167DED-607D-4FA5-AABE-22E6C9E0D985}|WebMessages.WEB.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages.web\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1E167DED-607D-4FA5-AABE-22E6C9E0D985}|WebMessages.WEB.csproj|solutionrelative:components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E167DED-607D-4FA5-AABE-22E6C9E0D985}|WebMessages.WEB.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages.web\\models\\mysidebaritem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E167DED-607D-4FA5-AABE-22E6C9E0D985}|WebMessages.WEB.csproj|solutionrelative:models\\mysidebaritem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1E167DED-607D-4FA5-AABE-22E6C9E0D985}|WebMessages.WEB.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages.web\\models\\users\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -132,47 +132,8 @@
         },
         {
           "DockedWidth": 597,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MySidebarService.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages.WEB\\Services\\MySidebarService.cs",
-              "RelativeDocumentMoniker": "Services\\MySidebarService.cs",
-              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages.WEB\\Services\\MySidebarService.cs",
-              "RelativeToolTip": "Services\\MySidebarService.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAuwC8AAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T16:01:05.556Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Home.razor",
-              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages.WEB\\Components\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "Components\\Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages.WEB\\Components\\Pages\\Home.razor",
-              "RelativeToolTip": "Components\\Pages\\Home.razor",
-              "ViewState": "AgIAAJkAAAAAAAAAAAAAAN4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-23T00:06:45.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ECDHKeyPair.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages.WEB\\Models\\ECDHKeyPair.cs",
-              "RelativeDocumentMoniker": "Models\\ECDHKeyPair.cs",
-              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages.WEB\\Models\\ECDHKeyPair.cs",
-              "RelativeToolTip": "Models\\ECDHKeyPair.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T15:56:49.245Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 8,
@@ -183,8 +144,7 @@
               "RelativeToolTip": "Models\\Messages\\SendMessagesRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T17:35:33.166Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-23T17:35:33.166Z"
             },
             {
               "$type": "Document",
@@ -196,8 +156,7 @@
               "RelativeToolTip": "Models\\Messages\\Message.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T16:18:43.461Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-20T16:18:43.461Z"
             },
             {
               "$type": "Document",
@@ -207,7 +166,7 @@
               "RelativeDocumentMoniker": "Modals\\MySidebar.razor",
               "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages.WEB\\Modals\\MySidebar.razor",
               "RelativeToolTip": "Modals\\MySidebar.razor",
-              "ViewState": "AgIAABgAAAAAAAAAAAAiwCcAAABcAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAiwDEAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-25T19:09:20.259Z",
               "EditorCaption": ""
@@ -222,8 +181,7 @@
               "RelativeToolTip": "Components\\Pages\\Login.razor",
               "ViewState": "AgIAABkBAAAAAAAAAAAtwCYBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-04T13:19:36.031Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-04T13:19:36.031Z"
             },
             {
               "$type": "Document",
@@ -235,8 +193,7 @@
               "RelativeToolTip": "Helpers\\Helper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T20:24:16.329Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-21T20:24:16.329Z"
             },
             {
               "$type": "Document",
@@ -246,14 +203,51 @@
               "RelativeDocumentMoniker": "Modals\\MySidebar.razor.cs",
               "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages.WEB\\Modals\\MySidebar.razor.cs",
               "RelativeToolTip": "Modals\\MySidebar.razor.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAiwEcAAACPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-21T16:44:01.244Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ECDHKeyPair.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages.WEB\\Models\\ECDHKeyPair.cs",
+              "RelativeDocumentMoniker": "Models\\ECDHKeyPair.cs",
+              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages.WEB\\Models\\ECDHKeyPair.cs",
+              "RelativeToolTip": "Models\\ECDHKeyPair.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T15:56:49.245Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages.WEB\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages.WEB\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-23T00:06:45.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MySidebarService.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages.WEB\\Services\\MySidebarService.cs",
+              "RelativeDocumentMoniker": "Services\\MySidebarService.cs",
+              "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages.WEB\\Services\\MySidebarService.cs",
+              "RelativeToolTip": "Services\\MySidebarService.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAuwC8AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T16:01:05.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MySidebarItem.cs",
               "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages.WEB\\Models\\MySidebarItem.cs",
               "RelativeDocumentMoniker": "Models\\MySidebarItem.cs",
@@ -261,8 +255,7 @@
               "RelativeToolTip": "Models\\MySidebarItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T17:45:25.633Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-23T17:45:25.633Z"
             },
             {
               "$type": "Document",
@@ -274,8 +267,7 @@
               "RelativeToolTip": "Models\\Users\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T17:43:10.131Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-23T17:43:10.131Z"
             },
             {
               "$type": "Document",
@@ -287,8 +279,7 @@
               "RelativeToolTip": "Models\\CreateUserRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T18:50:26.238Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T18:50:26.238Z"
             },
             {
               "$type": "Document",
@@ -336,8 +327,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-04T14:37:57.355Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-04T14:37:57.355Z"
             },
             {
               "$type": "Document",
@@ -361,8 +351,7 @@
               "RelativeToolTip": "Components\\Layout\\MainLayout.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-09T01:00:32.159Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-09T01:00:32.159Z"
             },
             {
               "$type": "Document",

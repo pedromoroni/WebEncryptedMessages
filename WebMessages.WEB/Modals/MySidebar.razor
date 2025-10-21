@@ -37,11 +37,11 @@
                         </div>
                         <div class="flex-grow-1">
                             <div class="d-flex justify-content-between">
-                                <span class="fw-bold text-dark">@(contact.Messages.Count > 0 ? contact.Messages[0].Decrypted : "")</span>
-                                <small class="text-muted">@(contact.User != null ? contact.User.Username : "")</small>
+                                <span class="fw-bold text-dark">@(contact.User != null ? contact.User.Username : "")</span>
+                                <small class="text-muted">@(contact.Messages.Count > 0 ? contact.Messages[0].DeliveredAt : "")</small>
                             </div>
                             <div>
-                                <small class="text-muted">9:00 AM</small>
+                                <small class="text-muted">@(contact.Messages.Count > 0 ? contact.Messages[0].Decrypted : "")</small>
                             </div>
                         </div>
                     </li>

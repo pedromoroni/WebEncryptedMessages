@@ -178,8 +178,7 @@
               "RelativeToolTip": "src\\WebMessages.API\\Controllers\\UsersController.cs",
               "ViewState": "AgIAAGEAAAAAAAAAAAAkwGkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T18:13:52.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T18:13:52.014Z"
             },
             {
               "$type": "Document",
@@ -191,8 +190,7 @@
               "RelativeToolTip": "src\\WebMessages.Repositories\\Implementations\\UserRepository.cs",
               "ViewState": "AgIAAFsAAAAAAAAAAIAwwG0AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T00:52:22.667Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-10T00:52:22.667Z"
             },
             {
               "$type": "Document",
@@ -214,7 +212,7 @@
               "RelativeDocumentMoniker": "src\\WebMessages.Models\\DTOs\\Users\\UserCredentialsRequest.cs",
               "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\Users\\UserCredentialsRequest.cs",
               "RelativeToolTip": "src\\WebMessages.Models\\DTOs\\Users\\UserCredentialsRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-10T00:57:57.082Z",
               "EditorCaption": ""
@@ -229,8 +227,7 @@
               "RelativeToolTip": "src\\WebMessages.Models\\DTOs\\Devices\\DeviceDTO.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAEwAUAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T17:40:58.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T17:40:58.029Z"
             },
             {
               "$type": "Document",
@@ -254,8 +251,7 @@
               "RelativeToolTip": "src\\WebMessages.Repositories\\Interfaces\\IMessageRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T00:53:06.8Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-10T00:53:06.8Z"
             },
             {
               "$type": "Document",
@@ -267,8 +263,7 @@
               "RelativeToolTip": "src\\WebMessages.Repositories\\Implementations\\MessageRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T00:52:13.899Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-10T00:52:13.899Z"
             },
             {
               "$type": "Document",
@@ -292,8 +287,7 @@
               "RelativeToolTip": "src\\WebMessages.Models\\DTOs\\Users\\UserDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T00:22:31.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-09T00:22:31.964Z"
             },
             {
               "$type": "Document",
@@ -305,8 +299,7 @@
               "RelativeToolTip": "src\\WebMessages.Services\\Implementations\\UserService.cs",
               "ViewState": "AgIAAGAAAAAAAAAAAAD4v3wAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T18:33:18.767Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T18:33:18.767Z"
             },
             {
               "$type": "Document",
