@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{364D5443-A86D-4C56-87EA-62DCA1541546}|src\\WebMessages.API\\WebMessages.API.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.api\\controllers\\messagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{364D5443-A86D-4C56-87EA-62DCA1541546}|src\\WebMessages.API\\WebMessages.API.csproj|solutionrelative:src\\webmessages.api\\controllers\\messagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.models\\dtos\\users\\usercredentialsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F525BAEA-5C9E-497B-8579-20B42A52D395}|src\\WebMessages.Models\\WebMessages.Models.csproj|solutionrelative:src\\webmessages.models\\dtos\\users\\usercredentialsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -49,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5D67E1FF-1BAE-454E-B839-DBD31FD3D717}|src\\WebMessages.Data\\WebMessages.Data.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D67E1FF-1BAE-454E-B839-DBD31FD3D717}|src\\WebMessages.Data\\WebMessages.Data.csproj|solutionrelative:src\\webmessages.data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{364D5443-A86D-4C56-87EA-62DCA1541546}|src\\WebMessages.API\\WebMessages.API.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.api\\controllers\\messagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{364D5443-A86D-4C56-87EA-62DCA1541546}|src\\WebMessages.API\\WebMessages.API.csproj|solutionrelative:src\\webmessages.api\\controllers\\messagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{364D5443-A86D-4C56-87EA-62DCA1541546}|src\\WebMessages.API\\WebMessages.API.csproj|c:\\users\\pedro\\documents\\webmessages\\webmessages\\src\\webmessages.api\\controllers\\devicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -150,7 +150,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 544,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -158,7 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "QueryInfo.cs",
               "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\QueryInfo.cs",
               "RelativeDocumentMoniker": "src\\WebMessages.Models\\DTOs\\QueryInfo.cs",
@@ -170,7 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.API\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "src\\WebMessages.API\\Controllers\\UsersController.cs",
@@ -182,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Repositories\\Implementations\\UserRepository.cs",
               "RelativeDocumentMoniker": "src\\WebMessages.Repositories\\Implementations\\UserRepository.cs",
@@ -194,32 +194,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 0,
               "Title": "MessagesController.cs",
               "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.API\\Controllers\\MessagesController.cs",
               "RelativeDocumentMoniker": "src\\WebMessages.API\\Controllers\\MessagesController.cs",
               "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.API\\Controllers\\MessagesController.cs",
               "RelativeToolTip": "src\\WebMessages.API\\Controllers\\MessagesController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAUwB0AAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAIwB0AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T17:28:50.544Z"
+              "WhenOpened": "2025-09-20T17:28:50.544Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UserCredentialsRequest.cs",
               "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\Users\\UserCredentialsRequest.cs",
               "RelativeDocumentMoniker": "src\\WebMessages.Models\\DTOs\\Users\\UserCredentialsRequest.cs",
               "ToolTip": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\Users\\UserCredentialsRequest.cs",
               "RelativeToolTip": "src\\WebMessages.Models\\DTOs\\Users\\UserCredentialsRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-10T00:57:57.082Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "DeviceDTO.cs",
               "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\Devices\\DeviceDTO.cs",
               "RelativeDocumentMoniker": "src\\WebMessages.Models\\DTOs\\Devices\\DeviceDTO.cs",
@@ -231,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "src\\WebMessages.Data\\AppDbContext.cs",
@@ -243,7 +244,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "IMessageRepository.cs",
               "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Repositories\\Interfaces\\IMessageRepository.cs",
               "RelativeDocumentMoniker": "src\\WebMessages.Repositories\\Interfaces\\IMessageRepository.cs",
@@ -255,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MessageRepository.cs",
               "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Repositories\\Implementations\\MessageRepository.cs",
               "RelativeDocumentMoniker": "src\\WebMessages.Repositories\\Implementations\\MessageRepository.cs",
@@ -267,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "DeviceService.cs",
               "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Services\\Implementations\\DeviceService.cs",
               "RelativeDocumentMoniker": "src\\WebMessages.Services\\Implementations\\DeviceService.cs",
@@ -279,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "UserDto.cs",
               "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Models\\DTOs\\Users\\UserDto.cs",
               "RelativeDocumentMoniker": "src\\WebMessages.Models\\DTOs\\Users\\UserDto.cs",
@@ -291,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Services\\Implementations\\UserService.cs",
               "RelativeDocumentMoniker": "src\\WebMessages.Services\\Implementations\\UserService.cs",
@@ -303,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "DeviceRepository.cs",
               "DocumentMoniker": "C:\\Users\\pedro\\Documents\\WebMessages\\WebMessages\\src\\WebMessages.Repositories\\Implementations\\DeviceRepository.cs",
               "RelativeDocumentMoniker": "src\\WebMessages.Repositories\\Implementations\\DeviceRepository.cs",

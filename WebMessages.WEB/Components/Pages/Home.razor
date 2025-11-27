@@ -9,6 +9,7 @@
 @inject NavigationManager Navigation
 @inject HttpClient httpClient
 @inject KeyStorageService KeyStorage
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 
 <div class="d-flex vh-100">
     <WebMessages.WEB.Modals.MySidebar></WebMessages.WEB.Modals.MySidebar>
@@ -35,18 +36,17 @@
 
                 <!-- Input de mensagem -->
                 <div id="webmessages-input-container"
-                     class="p-3 border-top bg-white d-flex align-items-center gap-2">
-                    <input id="webmessages-message-input"
-                           @bind=@MessageContent
-                           type="text"
-                           placeholder="✍️ Escreva a sua mensagem..."
-                           class="form-control border-0 shadow-none bg-light rounded-pill px-3" />
+                     class="p-3 d-flex align-items-center gap-2">
+                    <input id="webmessages-message-input" type="text" @bind-value=@MessageContent placeholder="✍️ Escreva a sua mensagem..." class="form-control border-0 shadow-none
+                        rounded-sm px-3" style="background-color: #e6e9ed; height: 44px">
 
                     <button id="webmessages-submit-message"
                             @onclick=@SendMessage
-                            class="btn btn-primary rounded-circle d-flex align-items-center justify-content-center"
+                            class="btn d-flex align-items-center justify-content-center"
                             style="width: 44px; height: 44px;">
-                        <span class="material-symbols-outlined">send</span> <!--Nao esta a aparecer corretamente-->
+                        <span class="material-symbols-outlined" style="color:#667eea;">
+                            send
+                        </span>
                     </button>
                 </div>
             </div>
@@ -161,6 +161,7 @@
                 sendResponse.EnsureSuccessStatusCode();
 
                 // por mensagem de sucesso
+                MessageContent = string.Empty;
                 return;
             }
             // por mensagem de erro
